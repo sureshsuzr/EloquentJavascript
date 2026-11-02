@@ -1,0 +1,98 @@
+1. CONTRIBUTION PER ORDER by merchants/basket x take rate (merchant picks, own MSO couriers)
+----------------------------------------------------------------------------------------------------
+ n  basket    take 5%   take 10%   take 15%   take 20%   courier$  courier-min
+ 1      55     -11.35      -8.82      -6.29      -3.76      16.73      28
+ 2      85     -17.23     -13.32      -9.41      -5.50      23.89      40
+ 3     110     -23.38     -18.32     -13.26      -8.20      31.06      52
+----------------------------------------------------------------------------------------------------
+Detail at 15% take, merchant picks:
+ n=1: basket=  55.00 items=   8.46 revenue=  17.60 take=   7.59 pick=   0.00 merchant_pick=   8.72 courier=  16.73 courier_min=  28.00 payments=   1.30 oos=   0.66 errors=   0.36 contribution=  -6.29 contrib_pct_gmv=  -0.11
+ n=2: basket=  85.00 items=  13.08 revenue=  22.85 take=  11.73 pick=   0.00 merchant_pick=  14.75 courier=  23.89 courier_min=  40.00 payments=   1.77 oos=   1.02 errors=   0.72 contribution=  -9.41 contrib_pct_gmv=  -0.11
+ n=3: basket= 110.00 items=  16.92 revenue=  27.22 take=  15.18 pick=   0.00 merchant_pick=  20.25 courier=  31.06 courier_min=  52.00 payments=   2.17 oos=   1.32 errors=   1.08 contribution= -13.26 contrib_pct_gmv=  -0.12
+----------------------------------------------------------------------------------------------------
+2. SAME, PLATFORM PICKS (Instacart model) at 15% take
+ n=1: contribution= -15.01  pick=  8.72  courier= 16.73
+ n=2: contribution= -24.16  pick= 14.75  courier= 23.89
+ n=3: contribution= -33.51  pick= 20.25  courier= 31.06
+----------------------------------------------------------------------------------------------------
+3. SAME, UBER DIRECT / DOORDASH DRIVE (point-to-point, ~$11/job est.), merchant picks, 15% take
+ n=1: contribution=  -0.57  courier= 11.00  (customer gets 1 drops)
+ n=2: contribution=  -7.52  courier= 22.00  (customer gets 2 drops)
+ n=3: contribution= -15.20  courier= 33.00  (customer gets 3 drops)
+----------------------------------------------------------------------------------------------------
+4. MARGINAL COST OF EACH EXTRA PICKUP STOP (own courier, merchant picks)
+ same $85 basket split over 2 merchants: extra cost vs 1 stop =   7.53
+ same $85 basket split over 3 merchants: extra cost vs 1 stop =  15.06
+ same $85 basket split over 4 merchants: extra cost vs 1 stop =  22.58
+----------------------------------------------------------------------------------------------------
+5. MERCHANT VIEW: incremental margin per platform order (gross margin 28% indep. grocer; 40% specialty)
+ GM 28% take 5%: merchant sales/order  39.10  margin after fee+pick   1.62
+ GM 28% take 10%: merchant sales/order  39.10  margin after fee+pick  -0.34
+ GM 28% take 15%: merchant sales/order  39.10  margin after fee+pick  -2.29
+ GM 28% take 20%: merchant sales/order  39.10  margin after fee+pick  -4.25
+ GM 40% take 5%: merchant sales/order  39.10  margin after fee+pick   6.31
+ GM 40% take 10%: merchant sales/order  39.10  margin after fee+pick   4.35
+ GM 40% take 15%: merchant sales/order  39.10  margin after fee+pick   2.40
+ GM 40% take 20%: merchant sales/order  39.10  margin after fee+pick   0.44
+----------------------------------------------------------------------------------------------------
+6. COURIER PRODUCTIVITY (orders per engaged courier-hour)
+ n=1: 28 engaged min/order -> 2.14 orders/engaged hr; with 2-order batching ~3.43
+ n=2: 40 engaged min/order -> 1.50 orders/engaged hr; with 2-order batching ~2.40
+ n=3: 52 engaged min/order -> 1.15 orders/engaged hr; with 2-order batching ~1.85
+----------------------------------------------------------------------------------------------------
+7. DENSITY: city P&L. Service area 120 km2 (inner Melbourne ring). Mix 50/35/15 of 1/2/3-merchant orders.
+ city fixed = $2,150,000/yr; central (tech+HQ) = $3,500,000/yr
+  orders/km2/day orders/day first-leg min contrib/order  city contrib/yr after city fixed  after central
+             0.5         60          12.0         -9.63         -210,876       -2,360,876     -5,860,876
+             1.0        120           9.3         -7.72         -338,277       -2,488,277     -5,988,277
+             2.0        240           7.5         -6.16         -539,432       -2,689,432     -6,189,432
+             4.0        480           6.2         -4.82         -843,849       -2,993,849     -6,493,849
+             8.0        960           5.2         -3.63       -1,273,531       -3,423,531     -6,923,531
+            16.0       1920           4.6         -2.57       -1,802,624       -3,952,624     -7,452,624
+            32.0       3840           4.1         -1.63       -2,291,257       -4,441,257     -7,941,257
+ break-even vs city fixed                        : NEVER (contribution/order stays negative at any density)
+ break-even vs city + central                    : NEVER (contribution/order stays negative at any density)
+ break-even vs + $500k founder draw + 25% buffer : NEVER (contribution/order stays negative at any density)
+----------------------------------------------------------------------------------------------------
+8. CUSTOMER LTV vs CAC (15% take, mix as above, dense case 8 orders/km2/day)
+ orders yr1= 8, yoy retention=35%: 3-yr contribution LTV $    -68  -> max CAC for 3x LTV/CAC $   -23
+ orders yr1=14, yoy retention=45%: 3-yr contribution LTV $   -109  -> max CAC for 3x LTV/CAC $   -36
+ orders yr1=24, yoy retention=55%: 3-yr contribution LTV $   -187  -> max CAC for 3x LTV/CAC $   -62
+----------------------------------------------------------------------------------------------------
+9. SENSITIVITY (tornado) on blended contribution/order at 8 orders/km2/day, base 15% take, merchant picks
+ base = $-3.63
+ platform picks / merchant picks    low $-16.20  high $ -3.63  swing $12.56
+ basket -25% / +40%                 low $ -6.35  high $  0.70  swing $ 7.05
+ take rate 10% / 20%                low $ -7.03  high $ -0.24  swing $ 6.78
+ delivery fee $4.99 / $10.99        low $ -6.59  high $ -0.68  swing $ 5.90
+ wait at merchant 8 / 2 min         low $ -7.05  high $ -1.93  swing $ 5.13
+ courier $/hr 40 / 30               low $ -5.56  high $ -0.93  swing $ 4.63
+ promo $4 / $0.5                    low $ -5.63  high $ -2.13  swing $ 3.50
+ OOS 15% / 4%                       low $ -5.49  high $ -2.68  swing $ 2.80
+ inter-stop 12 / 5 min              low $ -4.98  high $ -2.62  swing $ 2.36
+----------------------------------------------------------------------------------------------------
+10. BENCHMARKS (per order, A$; FX 1 USD = 1.52 AUD est.)
+ Instacart FY25: AOV US$110 = A$167; revenue ~10.2% GTV = A$17.03/order; adj EBITDA 2.9% GTV = A$4.84/order (ads are ~28% of revenue)
+ DoorDash Q3 25: contribution 5.1% of GOV; on a A$55 grocery basket = A$2.80/order
+ Milkrun 2022-23: about -A$10 to -A$13 per order (founder vs leaked deck); closed Apr 2023
+ This model, dense case: A$-3.63/order before city fixed costs
+----------------------------------------------------------------------------------------------------
+10b. SURVIVAL SCENARIOS (per order, own couriers)
+ A. on-demand multi-merchant, base (2 stops, $85, 15%, $7.99)                     contrib $ -9.41 (-11.1% GMV), courier $23.89
+ B. A + batching 40% + 2-min waits (orders staged ready)                          contrib $ -1.95 (-2.3% GMV), courier $16.44
+ C. single IGA-type full shop $130, 12% take, $9.99 fee, cap $8, batch 40%        contrib $  8.54 (6.6% GMV), courier $11.30
+ D. scheduled 2-hr windows, routed van 3 drops/hr, 2 merchants $120, 12%          contrib $ 12.71 (10.6% GMV), courier $6.57
+ E. D + platform consolidation: merchants drop to hub, 1 courier leg              contrib $ 18.18 (15.1% GMV), courier $4.78
+ (E ignores merchant->hub drop cost, ~$3-6/order if merchants do it, and a hub lease)
+----------------------------------------------------------------------------------------------------
+ scenario C ($8.54/order) break-even vs city fixed        :    690 orders/day =   5.7 orders/km2/day over 120 km2
+ scenario C ($8.54/order) break-even vs city+central      :  1,813 orders/day =  15.1 orders/km2/day over 120 km2
+ scenario C ($8.54/order) break-even vs +$500k draw x1.25 :  2,467 orders/day =  20.6 orders/km2/day over 120 km2
+ scenario D ($12.71/order) break-even vs city fixed        :    463 orders/day =   3.9 orders/km2/day over 120 km2
+ scenario D ($12.71/order) break-even vs city+central      :  1,218 orders/day =  10.1 orders/km2/day over 120 km2
+ scenario D ($12.71/order) break-even vs +$500k draw x1.25 :  1,657 orders/day =  13.8 orders/km2/day over 120 km2
+----------------------------------------------------------------------------------------------------
+11. WHAT HAS TO BE TRUE: venture outcome
+ exit A$150M @2x net rev -> net rev A$75M, GMV A$0.31B, 11,265 orders/day
+ exit A$300M @2x net rev -> net rev A$150M, GMV A$0.62B, 22,531 orders/day
+ exit A$1,000M @2x net rev -> net rev A$500M, GMV A$2.08B, 75,102 orders/day
