@@ -10,3 +10,4 @@
 
 To re-run one agent after updating the brief: ask Claude Code to run the `redteam-<slug>` agent.
 - `round3/`: software/data business round (9 agents): `round3/SYNTHESIS.md` **latest: start here**, `round3/models/software_model.py`
+- `grocery/`: separate idea, grocery aggregation using merchants as dark stores (11 agents): `grocery/SYNTHESIS.md`, models in `grocery/models/`
