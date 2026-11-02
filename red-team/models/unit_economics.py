@@ -126,7 +126,7 @@ def breakeven(p, target, **kw):
     return None
 
 
-def ramp(p, plan, years=7):
+def ramp(p, plan, years=10):
     """Annual ramp. plan: list of (funnel_signs, roll_buy) per year. Founder paid $0;
     shortfalls funded by founder equity. Returns rows and summary."""
     n = 0.0
@@ -137,6 +137,8 @@ def ramp(p, plan, years=7):
     for y in range(years):
         signs, buy = plan[y] if y < len(plan) else plan[-1]
         lost_attr = n * p["attrition"]
+        if signs == "R":
+            signs = lost_attr
         unrec = max(0.0, p["transition_loss"] - p["retention_cover"])
         retained_buy = buy * (1 - unrec)
         price = buy * price_per_prop(p) * (1 + p["deal_costs"])
@@ -196,6 +198,19 @@ def main():
     print(f"Roll price/property = {price_per_prop(p):,.0f}; effective cost per RETAINED acquired property "
           f"(deal costs + unrecovered transition loss) = {eff_cost_per_retained_roll_prop(p):,.0f}")
     print_unit(p, "base 3x (390 props/PM)")
+
+    print("\n=== 0. Incumbent benchmark vs founder direct cost (per property per year) ===")
+    inc = dict(pm=75_000 * 1.22 / 130, support=250, software=60)
+    inc_total = sum(inc.values())
+    print(f"  Incumbent (PM $75k loaded 1.22x /130 does own inspections; leasing/admin support; software): "
+          f"PM {inc['pm']:.0f} + support {inc['support']} + sw {inc['software']} = {inc_total:.0f} direct, "
+          f"+ ~300 shared overhead")
+    for k, ppm in [("1x", 130), ("2x", 260), ("3x", 390), ("4x", 520)]:
+        v = var_cost_per_prop(dict(p, props_per_pm=ppm))
+        print(f"  Founder {k} ({ppm}/PM): direct {v['total']:.0f}  (vs incumbent {inc_total:.0f}: "
+              f"{v['total'] - inc_total:+.0f})")
+    bo = var_cost_per_prop(p)["total"] - var_cost_per_prop(p)["pm"]
+    print(f"  Gate 2 check: founder back office ex-relationship-PM = {bo:.0f}/property vs Crossub benchmark ~560")
 
     # ---------- 1. Brief arithmetic check ----------
     print("\n=== 1. Brief arithmetic: 750-850 props x $600-700 margin ===")
@@ -260,10 +275,14 @@ def main():
     print(f"  ...same with 5-yr term: {contrib - annuity(price_per_prop(p) * p['lvr'], p['rate'], 5):,.0f}")
 
     # ---------- 5. Ramp ----------
+    R = "R"  # funnel signs = replace attrition only
     plans = {
-        "A funnel only": [(60, 0), (180, 0), (240, 0), (300, 0), (300, 0), (300, 0), (300, 0)],
-        "B roll-led (debt)": [(30, 250), (60, 250), (80, 300), (80, 300), (80, 0), (80, 0), (80, 0)],
-        "C brief mix": [(60, 150), (150, 200), (200, 250), (220, 200), (220, 0), (220, 0), (220, 0)],
+        "A funnel only, grow to ~2,500 then hold": [(60, 0), (200, 0), (300, 0), (400, 0), (450, 0), (500, 0),
+                                                     (550, 0), (R, 0), (R, 0), (R, 0)],
+        "B roll-led (debt) to ~1,100 then hold": [(30, 250), (60, 250), (80, 300), (80, 300), (R, 0)],
+        "C brief mix to ~1,300 then hold": [(60, 150), (150, 200), (200, 250), (220, 200), (R, 0)],
+        "D brief mix to ~2,500 (what $500k needs)": [(60, 200), (200, 300), (300, 400), (350, 400), (400, 300),
+                                                      (R, 0)],
     }
     for name, plan in plans.items():
         rows = ramp(p, plan)
@@ -274,9 +293,12 @@ def main():
         for r_ in rows:
             cum += r_["cash"]
             trough = min(trough, cum)
+            r_["cum"] = cum
             print(f"{r_['yr']:>3}{r_['props']:>7,.0f}{fmt(r_['rev'], 11)}{fmt(r_['ebitda'], 11)}{fmt(r_['interest'])}"
                   f"{fmt(r_['principal'])}{fmt(r_['funnel'], 11)}{fmt(r_['roll_equity'])}{fmt(r_['cash'], 11)}{fmt(r_['debt'], 11)}")
-        print(f"  Peak founder cash in (trough of cumulative cash): {-trough:,.0f}; cumulative cash yr7: {cum:,.0f}")
+        first_pos = next((r_["yr"] for r_ in rows if r_["cash"] > 0), None)
+        print(f"  Peak founder cash in (trough of cumulative cash): {-trough:,.0f}; cumulative cash yr10: {cum:,.0f};"
+              f" first cash-positive year (founder still unpaid): {first_pos}")
         print(f"  Plus forgone salary ~$500k/yr x years until FSC>=500k (see table 3) = the real cost of the ramp.")
 
     # ---------- 6. Tornado ----------
@@ -303,6 +325,19 @@ def main():
     for label, (k, lo, hi) in ranges.items():
         a = steady_state(1000, dict(p, **{k: lo}), roll_share=0.5, debt_phase="peak")["fsc"]
         b = steady_state(1000, dict(p, **{k: hi}), roll_share=0.5, debt_phase="peak")["fsc"]
+        res.append((abs(b - a), label, a, b))
+    for sw, label, a, b in sorted(res, reverse=True):
+        print(f"  {label:<32} bad {a:>10,.0f}  good {b:>10,.0f}  swing {sw:>9,.0f}")
+
+    print("\n=== 6b. Tornado: FSC at 2,500 props, debt repaid, funnel replacement (base 3x ~ the $500k point) ===")
+    base2 = steady_state(2500, p, debt_phase="none")["fsc"]
+    print(f"  Base FSC = {base2:,.0f}")
+    res = []
+    for label, (k, lo, hi) in ranges.items():
+        if k in ("rate", "term", "roll_multiple"):
+            continue
+        a = steady_state(2500, dict(p, **{k: lo}), debt_phase="none")["fsc"]
+        b = steady_state(2500, dict(p, **{k: hi}), debt_phase="none")["fsc"]
         res.append((abs(b - a), label, a, b))
     for sw, label, a, b in sorted(res, reverse=True):
         print(f"  {label:<32} bad {a:>10,.0f}  good {b:>10,.0f}  swing {sw:>9,.0f}")
