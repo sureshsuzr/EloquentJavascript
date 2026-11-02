@@ -1,0 +1,94 @@
+
+=== 1. AU mature revenue ceiling by product (penetration as stated) ===
+A rent-roll DD/valuation                 ARR $   1,689,000  GM 80%
+   buy-side DD reports                   650 x  30% x $6,000.00 = $  1,170,000
+   vendor-prep reports                   650 x  15% x $2,000.00 = $    195,000
+   lender subscriptions                    6 x  50% x $40,000.00 = $    120,000
+   broker/valuer seats                    20 x  35% x $12,000.00 = $     84,000
+   roll-up/PE subs                         8 x  50% x $30,000.00 = $    120,000
+B retention/book-health monitoring       ARR $     977,400  GM 85%
+   agency per-property             2,300,000 x   8% x $    3.60 = $    662,400
+   franchise HQ licences                  12 x  40% x $50,000.00 = $    240,000
+   lender covenant monitoring              6 x  50% x $25,000.00 = $     75,000
+C maintenance cost intelligence          ARR $     860,800  GM 75%
+   insurer data licences                   8 x  40% x $150,000.00 = $    480,000
+   maintenance platform API                4 x  50% x $80,000.00 = $    160,000
+   agency benchmarking             2,300,000 x   4% x $    2.40 = $    220,800
+D agentic DD/integration                 ARR $   2,310,000  GM 55%
+   integration projects                  650 x  12% x $25,000.00 = $  1,950,000
+   integration software subs              30 x  60% x $20,000.00 = $    360,000
+AU TOTAL (all four, mature ~Y7-10)       ARR $   5,837,200
+AU TAM @100% penetration                     $  38,840,000
+
+=== 2. With expansion (A+D scale on deals, B+C on props; minus local cost) ===
++NZ: +$    875,580  (one-off entry cost ~$150,000); cumulative $6,712,780
++UK: +$ 12,938,620  (one-off entry cost ~$900,000); cumulative $19,651,400
++US: +$ 23,348,800  (one-off entry cost ~$2,500,000); cumulative $43,000,200
+
+=== 3. Ramp scenarios (ARR by year; Y1 = Nov-26..Oct-27; Y1-2 part-time) ===
+
+AU-only base (A wedge, B+C added Y3-5): yrs to $1M ARR = 5, to $3M = 8; peak funding need $1,196,510
+  Yr        ARR      EBITDA   cum cash  founder pay  FTE
+   1     115,801    -189,372   -189,372            0   1.5
+   2     236,413    -126,160   -315,532            0   2.1
+   3     465,375    -395,455   -710,987      150,000   4.1
+   4     857,798    -322,814 -1,033,801      150,000   5.9
+   5   1,425,667    -162,709 -1,196,510      150,000   8.5
+   6   2,074,333     127,827 -1,068,683      150,000  11.4
+   7   2,642,202     518,551   -550,132      150,000  14.0
+   8   3,034,625     896,210    346,077      500,000  15.8
+   9   3,263,587   1,171,543  1,517,621      500,000  16.8
+  10   3,384,199   1,336,600  2,854,221      500,000  17.4
+
+AU+NZ+UK (seed ~$2.5M at Y3): yrs to $1M ARR = 4, to $3M = 5; peak funding need $1,562,781
+  Yr        ARR      EBITDA   cum cash  founder pay  FTE
+   1     250,036    -335,012   -335,012            0   2.1
+   2     493,095    -192,620   -527,632            0   3.2
+   3     953,263    -530,323 -1,057,956      150,000   6.3
+   4   1,776,566    -396,096 -1,454,052      150,000  10.1
+   5   3,110,701    -108,729 -1,562,781      150,000  16.1
+   6   4,960,589     463,031 -1,099,750      150,000  24.5
+   7   7,039,411   1,421,130    321,381      500,000  34.0
+   8   8,889,299   2,663,108  2,984,489      500,000  42.4
+   9  10,223,434   3,874,401  6,858,890      500,000  48.5
+  10  11,046,737   4,795,200 11,654,090      500,000  52.2
+
+AU-only bear (A only, low adoption): yrs to $1M ARR = 7, to $3M = None; peak funding need $1,015,144
+  Yr        ARR      EBITDA   cum cash  founder pay  FTE
+   1      68,789    -132,012   -132,012            0   1.3
+   2     143,044     -93,864   -225,876            0   1.7
+   3     277,770    -330,147   -556,024      150,000   3.3
+   4     481,575    -274,111   -830,134      150,000   4.2
+   5     718,425    -166,479   -996,613      150,000   5.3
+   6     922,230     -18,531 -1,015,144      150,000   6.2
+   7   1,056,956     121,781   -893,363      150,000   6.8
+   8   1,131,211     219,273   -674,090      150,000   7.1
+   9   1,168,084     274,303   -399,787      150,000   7.3
+  10   1,185,446     301,933    -97,854      150,000   7.4
+
+=== 4. Exit value at Y7 (ARR x multiple x founder ownership, after CGT est.) ===
+  AU-only base (A wedge, B+C added Y3-5) ARR7 $ 2,642,202 distressed/acqui-hire  EV $  3,963,304 founder net $ 2,425,542
+  AU-only base (A wedge, B+C added Y3-5) ARR7 $ 2,642,202 small-cap AU           EV $  7,926,607 founder net $ 4,851,084
+  AU-only base (A wedge, B+C added Y3-5) ARR7 $ 2,642,202 strategic              EV $ 13,211,012 founder net $ 8,085,140
+  AU+NZ+UK (seed ~$2.5M at Y3)           ARR7 $ 7,039,411 distressed/acqui-hire  EV $ 10,559,116 founder net $ 4,442,748
+  AU+NZ+UK (seed ~$2.5M at Y3)           ARR7 $ 7,039,411 small-cap AU           EV $ 21,118,233 founder net $ 8,885,496
+  AU+NZ+UK (seed ~$2.5M at Y3)           ARR7 $ 7,039,411 strategic              EV $ 35,197,055 founder net $14,809,161
+  AU-only bear (A only, low adoption)    ARR7 $ 1,056,956 distressed/acqui-hire  EV $  1,585,435 founder net $ 1,091,572
+  AU-only bear (A only, low adoption)    ARR7 $ 1,056,956 small-cap AU           EV $  3,170,869 founder net $ 2,183,144
+  AU-only bear (A only, low adoption)    ARR7 $ 1,056,956 strategic              EV $  5,284,782 founder net $ 3,638,573
+
+=== 5. Risk-adjusted 7-year wealth (net of $160k/yr living cost, savings compounding 6%) ===
+(a) Stay employed: $2,361,649  (deterministic-ish)
+   SW strong (AU+UK, ~$7M ARR Y7)   p=0.10  wealth $  10,623,702
+   SW base (AU ~$2.6M ARR Y7)       p=0.30  wealth $   4,935,002
+   SW lifestyle/bear (~$1M ARR)     p=0.30  wealth $   1,635,002
+   SW fail (shut Y4, job Y5)        p=0.30  wealth $      -5,264
+Software: expected $3,031,793; P(beat staying) = 40%
+   Op success (2,500 props)         p=0.30  wealth $   5,199,888
+   Op middling (1,000)              p=0.40  wealth $   1,832,916
+   Op fail                          p=0.30  wealth $     370,896
+(b) Operator: expected $2,404,402; P(beat staying) = 30%
+   CP success                       p=0.35  wealth $   3,011,270
+   CP middling                      p=0.40  wealth $   1,056,680
+   CP fail                          p=0.25  wealth $     489,653
+(c) Capital partner: expected $1,599,030; P(beat staying) = 35%
