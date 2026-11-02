@@ -1,0 +1,93 @@
+# Data Science & Underwriting Lead: red-team report
+
+## Verdict
+**Survives if the data claims shrink.** "Underwriting" as a priced product does not survive at single-corridor scale. Tenant risk scoring is data-starved: about 15–30 serious defaults a year per 1,000 properties. It is also legally fenced (the standard form, the Part IIIA credit-report bar and the Equal Opportunity Act) and low in value: the expected loss avoided is about $30–45 per tenancy-year. The statistics are decisive in two places: **pricing and reserving the flat maintenance fee**, and **pricing rent-roll acquisitions on their retention data**. The biggest issue is that the brief treats data as a moat. A 250–2,000-property book is a small-sample business. Its edge is measurement and pricing discipline, not prediction.
+
+## Verdict on the platform thesis
+- **Carries the economics, from a data lens:** (1) **Flat-fee maintenance.** It is a real pooling and pricing problem, and the operator's own job, invoice and condition-photo data is exactly what is needed. It is also the only service where better prediction converts directly into margin. (2) **Acquisition underwriting** of rent rolls. It isn't a customer-facing product, but it is the single largest $-lever a statistician controls: about $100k a deal from avoiding a 5-point retention mispricing on a $2M roll.
+- **Feature, not product:** tenant evaluation (it can't be charged to renters and landlords won't pay much), rent setting (buy Cotality-grade data; your own comparables are too few) and churn propensity (a rule-based alert does most of the job).
+- **Data-adjacent but blocked or slow:** tenant "rent history as credit". Part IIIA means rent data can't go onto bureau files. The only route is consent-based (open banking or a verified ledger reference). It is useful for tenants, but it isn't a revenue line in years 1–3.
+
+## Attacks on the thesis
+
+**A1. Tenant default prediction is hopeless on own data (High).** Here is what a book actually produces [estimate]. 1,000 managements, ~33% annual tenancy turnover → ~330 new leases a year. At ~5–15 applications per lease that is ~1,600–5,000 applications, but outcomes are observed only for the ~330 accepted. That is a selection-bias (reject-inference) problem you can't solve without randomising acceptance, which you won't do. Serious default (possession for arrears, or a rent claim on the bond) at ~1.5–3% per tenancy-year gives **15–30 events a year** [estimate: industry anecdote; the Vic VCAT 2024–25 counts weren't retrieved]. A development sample needs ~10–20 events per candidate variable, plus ≥100 events to validate. Detecting an AUC uplift of 0.05 over a heuristic (rent ≤30% of income + clean tenancy-database check + verifiable ledger), at 80% power on paired scores, needs AUC SE ≈0.02, i.e. **~200–300 events** [estimate: Hanley–McNeil; SE at AUC 0.70 is 0.066 at 20 events, 0.030 at 100 and 0.017 at 300]. That is **10–20 years at 1,000 properties, or 4–8 years at 2,500**. Cold start is permanent unless you pool with other agencies.
+
+**A2. The legal feature set is thin and fixed (High).** Since 31 Mar 2026 Victorian providers may request only what the prescribed form allows: identity (limited documents), capacity to pay and rental history/references. Asking anything else is an offence carrying up to ~$62.7k for a company [verified: CAV via search summary]. CAV's taskforce already forced a rent-tech platform to remove unlawful questions (Jul 2026) [verified: CAV news, search summary]. Application fees to renters are banned, including fees charged by third-party apps [verified: CAV via search]. Credit reporting bodies **may not** give consumer credit reports to agents or landlords, who aren't credit providers [verified: OAIC "Real estate agents, employers and your credit report"]. What remains is income ratio, employment, the tenancy-database check (NTD/TICA, regulated by RTA Part 10A, with a 3-year listing limit and family-violence protections) and references. Every competent PM already uses those. There is no proprietary signal at application stage. Also note: unsuccessful applicants' data must be destroyed or de-identified within **30 days after the property is leased** (6 months with written consent) [verified: CAV guidance via search summary]. **You cannot build a training set from rejected applicants**, so your models can never see the people you turn away.
+
+**A3. The value at stake is small (High).** Expected loss per tenancy-year ≈ P(default) 2% × net loss after a 4-week bond of ~$3–6k ≈ **$60–120**. Landlord insurance absorbs much of it: RACV paid an average of $3,341 per rent-default claim [verified: RACV figures in trade press, but dated 2013–14]. A model that cuts defaults by 30% saves ~$20–40 per tenancy-year. With Melbourne vacancy ~1.4% (SQM, Mar–May 2026) [verified: secondary, via PRD/agency reports], landlords already choose from deep fields. Willingness to pay for "AI tenant scoring" is likely $0–50 a lease, and the product can only be monetised as a guarantee, which round 1 flagged as probable insurance.
+
+**A4. Fairness exposure grows with model complexity (High).** The Equal Opportunity Act 2010 (Vic) covers accommodation and protects age, disability, parental/carer status, marital status, race, sex, **spent convictions** (since 1 Dec 2021) and more [verified: VEOHRC/Sparke via search]. Income-stability and employment-type features proxy for age, sex (part-time, parental leave), disability (DSP) and race (visa or short work history). The bind: **the standard form stops you collecting protected attributes for bias testing.** Fairness testing must use area-level proxies (ABS SA1 composition), which are weak. A complex model is therefore harder to defend than a transparent rule. From **10 Dec 2026**, APP 1.7–1.9 requires privacy-policy disclosure of automated decisions that significantly affect individuals. OAIC guidance (30 Sep 2026) reportedly captures systems where a human makes the final call if the program is a key factor [verified: Allens/Maddocks commentary, search summaries]. Tenant scoring is squarely in scope once you are an APP entity, which you are once you trade in personal information or exceed $3M turnover.
+
+**A5. The flat maintenance fee is an insurance-pricing problem with adverse selection (High, but solvable).** Maintenance cost per property-year is heavy-tailed. Use a mean ~$2,000 with SD ~$4,000 [estimate: BIS Oxford 2019 house $2,661 / apartment $1,677 (verified via DHA), inflated ~25–30%; the 1–2%-of-value rule of thumb gives higher figures]. Pool risk at that mean and SD:
+
+| Book | Pool SD as % of expected cost | 1-in-20 overrun |
+|---|---|---|
+| 250 | 12.6% | ~21% |
+| 500 | 8.9% | ~15% |
+| 1,000 | 6.3% | ~10% |
+| 2,500 | 4.0% | ~7% |
+
+[estimate: independent risks]. Correlated shocks add to this: trade inflation, storms, and **Victoria's minimum energy-efficiency standards from 1 Mar 2027**. Under those standards a failed heater or hot water system must be replaced with an efficient electric one, and ceiling insulation to R5.0 is triggered at a new lease [verified: Energy Vic/CAV via search]. Pricing a single cell to ±10% at 95% needs ~860–2,400 property-years (CV 1.5–2.5). A 5-cell tariff (age × type) needs ~5–10k property-years. **A greenfield book can't price this.** Adverse selection: landlords know their property's condition better than you do, so opt-in will skew to old, neglected stock (round 1 finding 6).
+
+**A6. Rent setting and days-to-lease: your data is too small to beat bought data (Med).** ~330 leasings a year per 1,000 properties, against Cotality and Domain models built on millions of listings, plus DFFH moving-annual-rent data by suburb (quarterly, but lagged: the Sep-2025 quarter was released Feb 2026) [verified: data.vic.gov.au listing]. Fixed-price advertising and the ban on accepting offers above the advertised rent (round 1) mean the decision is a single advertised price. The upside is landlord-side: 1% on a $600/wk rent ≈ $312/yr, and one week of vacancy ≈ $600. Your fee share of that is ~$17–33. Your one unique dataset is **price-vs-days elasticity from deliberate ±2–3% price variation**. It is a genuine but small edge, and it needs landlord consent.
+
+**A7. Churn/sale propensity: the outcome is common but the action is weak (Med).** At 10–14% churn, 1,000 properties give 100–140 events a year, enough for a 6–8-variable logistic model within ~2 years. The best predictors are observable without ML: tenure since purchase (from title or Cotality data), an appraisal request, a lapsed lease, large repairs or MEES capex, a land-tax notice, a rate reset. A model improves targeting, but the interventions (keep the management with the buyer, sale capture) are constrained by s 48A. Expected uplift is a few retained managements a year. Worth it, but not a product.
+
+**A8. Using tenant data to sell finance or home-buying (Med–High, legal).** Application data was collected to assess a tenancy. Re-using it to market loans or buyer services is a secondary purpose. It needs express consent under the Privacy Act (APP 6/7) and under the Victorian RTA's own consent rules for disclosure. It also puts at risk the small-business exemption the agency might otherwise rely on. The tenant-side "grow equity / buy a home" funnel must run on fresh opt-in data, not the tenancy file.
+
+## Things the brief gets wrong, misses or understates
+- **Misses the asset you actually acquire: history.** A bought PropertyMe book of 400 properties carries roughly 5–10 years of creditor invoices (maintenance by property), rent ledgers, arrears notices, entry/exit condition reports and leasing outcomes, i.e. **2,000–4,000 property-years**. That is enough to price the maintenance fee at book level and to underwrite the next acquisition. Data rights and an export must be written into the sale contract (exports have to cover full history and attachments, not 24 months).
+- **Understates the condition-report asset.** Every Victorian tenancy needs an entry condition report, and routine inspections (as I recall, no more than once every 6 months) generate dated photos [unverified: RTA inspection frequency from memory]. Vision-graded condition is the one feature that beats the landlord's information advantage in maintenance pricing.
+- **Behavioural (in-tenancy) scoring beats application scoring.** That is where credit risk got its lift too. 1,000 tenancies give ~12,000 tenancy-months a year. Late-payment events at a few per cent give ~400–700 events a year, enough within one year to rank who to call first. It is legal (operational use), cheap and measurable.
+- **Rent history as credit evidence** can't reach bureau files under Part IIIA. The working pattern is consent-based: open banking, e.g. Equifax with Occubuy "Open Score" [unverified: one secondary source]. Bureau landscape: Experian reportedly absorbed illion's credit-reporting business on 1 Apr 2026 [unverified].
+- **The NTD product line may be changing.** Equifax's "Tenancy Check" page says it is no longer offered, while NTD-branded pages persist [unverified: search summary]. Confirm current tenancy-database access before designing around it.
+
+## Numbers checked
+| Claim | Finding | Status/source |
+|---|---|---|
+| Standard application form from Mar 2026 | In force 31 Mar 2026; request anything outside the form = offence, up to ~$62.7k (company) | [verified: CAV via search summary] |
+| Screening can use credit data | Credit reporting bodies may not give credit reports to agents/landlords | [verified: OAIC] |
+| Unsuccessful-applicant data reusable | Must be destroyed/de-identified within 30 days of leasing (6 months with consent) | [verified: CAV via search summary] |
+| ADM transparency 10 Dec 2026 | Confirmed; OAIC guidance ~30 Sep 2026; captures human-in-loop where the program is a key factor | [verified: law-firm commentary] |
+| Tenancy database rules | RTA Part 10A; 3-year limit; family-violence protections; applies to interstate operators | [verified: Justice Connect/Tenants Vic] |
+| Maintenance cost per property | $1.7–2.7k (2019) → ~$2.1–3.5k in 2026 dollars | [estimate from BIS Oxford via DHA] |
+| MEES start | 1 Mar 2027 (heating and hot water on failure; insulation at lease; draughtproofing 1 Jul 2027) | [verified: Energy Vic/CAV via search] |
+| Melbourne vacancy | ~1.4–1.6% (Mar–May 2026) | [verified: secondary (PRD, Jellis Craig, SQM)] |
+| Managed vs private arrears incidence | 6% vs 14% | [unverified: vendor blog citing SQM May 2026] |
+| Rent-default claim size | RACV avg $3,341; malicious damage $4,323 | [verified: trade press; 2013–14, stale] |
+| DFFH bond/rent data currency | Latest confirmed release Sep-2025 qtr (Feb 2026) | [verified: data.vic.gov.au] |
+
+The web search budget ran out before I could get the VCAT 2024–25 possession counts or the full Form 3A field list. Several CAV and government pages were blocked from this session.
+
+## Improvements (ranked by impact)
+1. **Make "data rights + full export" a term in every acquisition**, and run a pre-close data audit: ledger arrears history, invoices per property, the 3-year management-loss curve. Price the roll on the modelled survival curve, not the vendor's word. This is the founder's highest-$ use of statistics.
+2. **Launch the maintenance fee as a capped, experience-rated pilot, not a full guarantee.** Use 50–100 properties from the acquired book whose 3+ years of invoice history is known. Exclude capital items and MEES-triggered replacements. Add a per-job excess (e.g. $150) and an annual aggregate cap with recourse above it. Re-rate yearly. Underwriting entry requires a condition grade. Get advice on whether this is an insurance contract. Target a loss ratio of 75–85% with ≥15% loading at 500 properties.
+3. **Drop "tenant evaluation" as a priced product.** Ship a transparent, form-compliant rule set with a written rationale per decision: affordability band, verified rental history, tenancy-database result, references. A human selects the tenant. Disclose it in the APP 1.7 privacy policy. Keep model-based application scoring off the table until a multi-agency data pool exists.
+4. **Build in-tenancy behavioural arrears scoring** for collections prioritisation and early hardship outreach. It is measurable in 3–6 months and feeds the arrears guarantee pricing later, if one is ever legal.
+5. **Buy rather than build** rent AVMs and market data (Cotality, Domain). Own only the experiment layer (price-variation tests, days-to-lease elasticity).
+6. **Model governance from day 1:** a model inventory, a one-page model card per model (purpose, data, legal basis, excluded features, fairness test, owner), out-of-time validation, a quarterly monitoring pack (PSI, calibration), a human-override log, and an adverse-decision explanation template.
+7. **Seek a data pooling partnership** for application-stage models: a consortium of 5–10 independent agencies through a de-identified data trust, or a landlord insurer's claims data. Without one, the tenant-risk ambition is out of reach for good.
+
+## Tests & kill criteria
+| Test | Metric | Threshold | Time/cost |
+|---|---|---|---|
+| Maintenance backtest on a seller's (or partner agency's) PropertyMe export, ≥500 properties × 3 yrs | Out-of-time loss ratio of a simple age/type/condition tariff vs actual | Tariff predicts book-level cost within ±10% and cell-level within ±20% → proceed; worse than ±25% → kill the flat fee | 4–6 weeks, <$10k (paid data access) |
+| Flat-fee demand test | Take-up among offered landlords at break-even +15% | ≥20% take-up with no deterioration in mean property age vs book → proceed; take-up concentrated in the oldest quartile (adverse selection) → redesign or kill | 8 weeks on the acquired book |
+| Retention-model diligence on a target roll | Calibration of 12-month loss prediction on the vendor's past cohorts | Brier/calibration error <3 points → use in pricing | Per deal, 2 weeks |
+| Behavioural arrears model | Precision@top-10% for next-month late payment | ≥2.5× base rate within 6 months | Founder build, ~$0 |
+| Tenant scoring value check | Simulated loss avoided vs rule set | <$50 per tenancy-year → never productise (my prior) | Desk exercise |
+
+## Answers to the round-2 questions in my domain
+1. **Which services carry the economics?** First, maintenance (priced from acquired history), then investment support (where the regulatory specialist allows it). Tenant evaluation and rent setting are features that lift retention, not revenue.
+2. **Lifetime value.** A data lens doesn't change it much. The maintenance fee adds margin of ~$200–400 per property a year (an estimate: a $2.3–2.6k fee at a 15% loading less ops cost) on the share that opts in. At 30–40% take-up that is ~$60–160 per managed property, i.e. a 3–9% lift on $1.86k revenue. It does **not** materially reduce the ~2,000-property scale needed.
+3. **Regulated services, from my lens:** application screening (RTA standard form, Part 10A, Equal Opportunity Act, APP 1 ADM); the maintenance fee (possible insurance); tenant data for finance (APP 6/7 consent, ACL if credit assistance). The disqualifying one is re-purposing application data for marketing.
+4. **Autonomy.** Out of scope, except that underwriting decisions (selection, bond claims) must stay human-final and explained.
+5. **The founder's edge.** It is decisive in acquisition underwriting, pricing and reserving maintenance risk, experiment design and the CFO's cash-reserve view of a risk pool. It is irrelevant for application-stage tenant ML, rent AVMs and generic AI ops (vendors and data providers have more data).
+6. **Smallest test.** The maintenance backtest on one agency's 3-year export: weeks, under $10k. If a simple tariff can't price the book within ±10%, the "underwriting platform" has no core.
+
+## Questions I'd hand to other specialists
+- **Regulatory counsel:** Is a fixed-fee maintenance plan with caps and excesses an "insurance business" under the Insurance Act 1973, or a service contract? Can any part be charged to renters under the RTA?
+- **Regulatory counsel:** Does the Victorian RTA restrict re-use of *successful* tenants' application data (income) for later offers, even with consent?
+- **M&A/debt:** Will vendors and brokers accept a data-audit clause and a full PropertyMe export as a condition of sale? Will lenders credit retention models in valuation?
+- **Insurance:** Would a landlord insurer share de-identified claims data or co-underwrite the maintenance pool?
+- **PM operations:** What are actual jobs per property per year and the invoice CV on a typical inner-north book?

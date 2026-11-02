@@ -310,6 +310,24 @@ def main():
         n = scale_for(q, ["te", "mx", "br", "nm", "sc"])
         print(f"  attach x{mult}: properties for $500k {n} (mgmt-only {n0})")
 
+    print("\n=== 9. Per-TENANT relationship LTV (one tenancy, avg length 1/turnover yrs) ===")
+    for label, q in [("base", p), ("upside", dict(p, tf_rate=0.06, tf_capture=0.10, tm_match=0.15, ts_attach=0.05))]:
+        yrs = 1 / q["tm_move"]
+        per_yr = q["tf_rate"] * q["tf_capture"] * loan_npv(q, q["tf_loan"]) + q["ts_attach"] * q["ts_net"]
+        pv = sum(per_yr / (1 + q["disc"]) ** t for t in range(int(round(yrs))))
+        move = q["tm_local"] * q["tm_match"] * q["tm_value"] / (1 + q["disc"]) ** yrs
+        print(f"  {label:<7} tenancy {yrs:.1f} yrs: finance+subscription PV {pv:,.0f} + in-portfolio move {move:,.0f}"
+              f" = {pv + move:,.0f} per tenant relationship")
+    print("  vs landlord relationship (mgmt only) LTV", f"{ltv(p)[0]:,.0f}")
+    print("\n=== 10. Round-1 reconciliation ===")
+    print(f"  Round-1 $500k scale 2,510 included referral $75/prop/yr (50% capture, no s48A haircut).")
+    print(f"  Same model, referral at $0: {scale_for(p, [])} properties; with landlord services at base attach: "
+          f"{scale_for(p, ['te','mx','br','nm','sc'])}")
+    mxar = dict(p, mx_attach=1)
+    print(f"  Maintenance via APRA insurer as authorised rep (15% commission, $60 admin, no risk): "
+          f"{0.15 * p['mx_expected'] * (1 + p['mx_loading']) - 60:,.0f}/subscriber vs risk-bearing base "
+          f"{service_annual(mxar, ['mx'])[0]['mx']:,.0f} (before s48A on commissions)")
+
 
 if __name__ == "__main__":
     main()
