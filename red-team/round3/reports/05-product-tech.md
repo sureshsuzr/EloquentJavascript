@@ -203,4 +203,3 @@ Human review: 6–12 h at v0, with a target of ≤3 h by report 20.
 - **Lending:** do any of the big four or non-bank lenders already use covenant metrics on rolls (loss rate, arrears) that B could automate? What are their vendor-onboarding thresholds?
 - **Rent-roll M&A:** will acquirers share past pre-sale and post-sale exports for a backtest, and in exchange for what?
 
-Sources: eliteagent.com and proptechconnect.com (AiMe Connect); softwareadvice.com.au (PropertyMe scale); apis.io / API Evangelist / pypme docs (PropertyMe API); enterprisedna.co (export guides); consumer.vic.gov.au and energy.vic.gov.au (energy standards, trust accounts); vba.vic.gov.au / bpc.vic.gov.au (safety checks); acumentis.com.au (rent-roll valuation); AWS Bedrock docs and blog (AU cross-region); Anthropic model and pricing table (via claude-api skill); soc2auditors.org, scrut.io, spendhound.com (SOC 2 / Vanta costs).
