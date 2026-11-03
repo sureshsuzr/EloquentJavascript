@@ -10,22 +10,7 @@
 
 ## What I generated, and what I cut
 
-I generated 14 ideas before cutting:
-
-1. SaaS revenue-based finance
-2. R&D tax incentive advance lending
-3. Receivables or invoice finance
-4. EV fleet and equipment leasing
-5. Rent-roll lending
-6. A lender for recurring-commission "books" of business
-7. An SME succession acquisition-credit fund
-8. A permanent-capital succession holdco
-9. A battery and solar warranty MGA
-10. An EV residual-value or battery-health cover MGA
-11. A strata defect-remediation lender
-12. A private-credit valuation and monitoring utility
-13. A super-fund co-investment vehicle for SME buyouts
-14. AI-underwritten tradie and SME credit
+I generated 14 ideas: SaaS revenue-based finance, R&D tax lending, receivables finance, EV fleet leasing, rent-roll lending, a recurring-commission book lender, an SME succession credit fund, a permanent-capital succession holdco, a battery/solar warranty MGA, EV residual-value cover, strata defect lending, a private-credit valuation utility, a super-fund buyout co-investment vehicle, and AI-underwritten SME credit.
 
 **Cut, and why:**
 
@@ -178,84 +163,43 @@ I generated 14 ideas before cutting:
 
 ### B. "BookCo": a stretch-senior and acquisition-capital provider for recurring-commission books (rent rolls first)
 
-**One-liner.** Capital for buyers of books of recurring commission: rent rolls, insurance-broker books, accounting fee bases, financial-adviser books and strata management.
+**One-liner.** Capital for buyers of books of recurring commission: rent rolls, insurance-broker books, accounting fee bases, adviser books and strata management. It sits above bank senior debt (~50–70% LVR) as a stretch or second-lien tranche to ~80–85%, plus earn-out and holdback financing and roll-up co-investment. The round-3 retention engine sets the price. Acquirers pay 12–16% coupons and fees; BookCo also takes equity upside.
 
-- **Where it sits:** above bank senior debt (banks lend ~50–70% LVR) as a stretch or second-lien tranche to ~80–85%.
-- **Products:** earn-out and holdback financing, and roll-up equity co-investment.
-- **Pricing edge:** the round-3 retention-pricing engine.
-- **Who pays:** acquirers, through 12–16% coupons and fees, plus equity upside on roll-ups.
+**Why now.** These books change hands steadily as boomers exit, and roll-ups are active (round 3). NAB lends to 70% LVR (some pages say 80%), for up to 10 years, and only to agencies with 100+ properties under management **[verified: NAB rent-roll pages]**. The gap above the bank tranche, and every buyer below NAB's threshold, is filled by vendor finance or not at all. Round 3 found the engine is worth **$50–100k per deal to the buyer**, so the way to monetise it is as capital, not reports.
 
-**Why now.**
+**Unfair inputs.** The round-3 engine and outcome dataset (unique if built), real-estate networks through LocalAgentFinder, and credibility for the loss model. **Weak:** Macquarie dominates practice finance and is very good at it, and deal volume is thin (~250–900 rent-roll deals a year).
 
-- These books change hands steadily as the boomer cohort leaves.
-- UK and Australian roll-ups are active (round-3 synthesis).
-- **NAB's rent-roll policy:** lends to 70% LVR (some pages say 80%), for terms up to 10 years, and only to agencies with 100+ residential properties under management **[verified: NAB rent-roll lending pages]**.
-- The gap between the bank tranche and the price, and every buyer below NAB's size threshold, is now filled with vendor finance or not at all.
-- The round-3 synthesis found the engine is worth **$50–100k per deal to the buyer**. The way to monetise that is as a capital provider, not a report vendor.
+**Market and model.** Across the four book types, perhaps A$1.5–3B of transaction value a year. The stretch tranche is 15–25% of that, so ~A$250–600M **[estimate]**.
+- **Years 1–2:** a A$5–15M balance sheet; loans of A$0.3–2M.
+- **Year 3+:** a A$100–200M fund.
+- At A$80M deployed: ~A$5–6M net interest margin, or ~A$1.5M in fees plus carry as a fund.
+- **Comparables:** Oak Street Funding, a US insurance-agency lender bought by First Financial Bancorp **[unverified price]**; Macquarie practice finance; Live Oak, which began in vet and pharmacy lending.
 
-**Unfair inputs.**
-
-- The engine and outcome dataset from round 3: unique if built.
-- Real-estate agency networks through LocalAgentFinder.
-- Statistician plus CFO credibility for the loss model.
-- **Weak:**
-  - Macquarie Business Banking dominates practice finance for accountants, advisers and brokers, and is very good at it.
-  - Deal volume is thin: ~250–900 rent-roll deals a year (round 3). Broker books are similar.
-
-**Market and model.**
-
-- **Size:** across the four book types, perhaps A$1.5–3B of transaction value a year in Australia. The stretch tranche is 15–25% of that, so ~A$250–600M a year **[estimate]**.
-- **Phases:**
-  - **Years 1–2:** a balance sheet of A$5–15M from the founder, friends and a family office. Loans of A$0.3–2M.
-  - **Year 3+:** A$100–200M fund.
-- **Comparables:**
-  - Oak Street Funding: US insurance-agency lender, bought by First Financial Bancorp **[unverified: price not confirmed]**.
-  - Macquarie practice finance.
-  - Live Oak's verticals: it began in veterinary and pharmacy practice lending.
-- **Revenue:**
-  - At A$80M deployed, ~A$5–6M net interest margin after funding.
-  - Or, as a fund: ~A$1.5M in fees plus carry.
-
-**Capital and structure.**
-
-- **Phase 1:** founder A$0.5–0.8M first-loss equity, plus A$5–10M of co-lender money from family offices on a note programme.
-- **Licensing:**
-  - Wholesale notes need an AFSL or authorised-representative structure.
-  - Business lending needs no ACL.
-- **Founder ownership:** ~70–80%.
-- **Later:** this becomes the first vertical "sleeve" of idea A, or is sold to a bank or credit manager.
+**Capital and structure.** Founder puts in A$0.5–0.8M first-loss equity, plus a A$5–10M family-office note programme. Wholesale notes need an AFSL or authorised-representative structure; business lending needs no ACL. Founder keeps ~70–80%. BookCo later becomes the first sleeve of A, or is sold.
 
 **Outcome distribution (10 years).**
 
 | Outcome | P | Founder wealth | What it looks like |
 |---|---|---|---|
-| Fail | 25% | A$2.3M | Cheap test while employed; abandon after year 2 with modest losses |
+| Fail | 25% | A$2.3M | Cheap test while employed; abandon after year 2 |
 | Modest | 40% | A$3.6M | A$40–80M book, A$400–500k pay |
-| Good | 25% | A$6.0M | A$150–250M across verticals; sale or merge into a larger manager |
-| Great | 10% | A$12M | Becomes the category specialist; equity upside from roll-ups |
+| Good | 25% | A$6.0M | A$150–250M across verticals; sale or merger |
+| Great | 10% | A$12M | Category specialist plus roll-up equity |
 
-**EV ≈ A$4.7M; median ≈ A$3.6M.** It has the highest floor of the four. The ceiling is capped because the niche is thin and Macquarie is entrenched.
+**EV ≈ A$4.7M; median ≈ A$3.6M.** Highest floor of the four; the ceiling is capped by the thin niche and by Macquarie.
 
-**Time to replace $500k.** About 3–5 years. It can start while employed, but only as data and engine work and lender soundings; lending is the jump point.
+**Time to replace $500k.** About 3–5 years. Data and engine work, plus lender soundings, can start while employed; lending is the jump point.
 
-**Job satisfaction.** Good: underwriting with real data and close to deals. But the niche is narrower, so there's less novelty after year 3.
+**Job satisfaction.** Good: real-data underwriting, close to deals. The narrow niche means less novelty after year 3.
 
 **Key risks.**
+1. A volume ceiling of maybe ~50–150 financeable deals a year.
+2. Macquarie or NAB raise LVRs a notch and close the gap.
+3. Integration-driven retention losses (~66% vs ~80% kept) are larger than the pricing error the engine catches, and second-lien recovery is poor.
 
-1. **Volume ceiling.** There may be only ~50–150 financeable deals a year nationally in the stretch-tranche band.
-2. **Macquarie/NAB reaction.** Either bank can raise LVRs a notch and erase the gap.
-3. **Retention shocks.** A buyer's poor integration (~66% versus ~80% retention, round 1) is larger than the pricing error the engine catches, and second-lien recovery is poor.
+**What kills it:** banks lift LVR broadly to 80%, or fewer than 30 deals a year come to him.
 
-**What kills it:** banks lift LVR to 80% broadly, or fewer than 30 deals a year come to him.
-
-**90-day test (~A$15k).**
-
-- **Count the deals:**
-  - Survey 10 rent-roll and insurance-book brokers.
-  - **Pass:** ≥40 deals a year where the buyer had a gap above bank debt they'd pay ≥12% to fill.
-- **Demand:** get 3 acquirers to sign non-binding indications for a stretch tranche.
-- **Backtest:** run the engine on ≥10 historical rolls with outcomes.
-- **Kill:** fewer than 20 qualified deals, or banks already stretching to 80%+.
+**90-day test (~A$15k).** Survey 10 rent-roll and insurance-book brokers. Get indications from 3 acquirers. Backtest the engine on ≥10 historical rolls. **Pass:** ≥40 deals a year with a gap the buyer would pay ≥12% to fill. **Kill:** fewer than 20, or banks already lending at 80%+.
 
 ---
 
@@ -271,60 +215,38 @@ I generated 14 ideas before cutting:
 The capital and claims risk sits with a carrier (Lloyd's syndicate or local insurer) under a binder. The MGA earns 25–35% commission plus a profit commission.
 
 **Why now.**
+- **Batteries:**
+  - The Cheaper Home Batteries Program passed 250,000 installs by Mar 2026 **[verified: Energy-Storage.news]**; one secondary source reports 500,000 by Aug 2026 **[unverified]**.
+  - The Clean Energy Regulator reportedly found **>60% of inspected installations substandard** **[verified: secondary reporting, RenewEconomy/Pulse]**.
+  - Workmanship warranties are worthless once an installer closes, and rebate cuts from 1 May 2026 will shake out installers **[verified: Energy Matters]**.
+- **The regulatory gap:**
+  - The UK's Renewable Energy Consumer Code requires members to insure the workmanship warranties they issue **[verified: reonic, on UK RECC]**.
+  - I found no such requirement in Australia's NETCC **[confirm with NETCC]**, and a retailer expelled from NETCC in Dec 2025 kept trading.
+  - An insurance-backed guarantee is a lever regulators can mandate. This is the "regulation as a channel" bet.
+- **EVs:**
+  - The FBT exemption cost ~A$2B in 3 years against a A$205M forecast, and phases down from 1 Apr 2027 **[verified: NRMA, CarExpert]**.
+  - Novated EV leases number "over 100,000" **[unverified]**.
+  - Lessees usually carry the residual gap **[verified: Gridly; contract-dependent]**.
+  - Resale confidence fell from 76% to 56% (2024→2026) **[verified: Insurance Business AU]**.
+  - Lease-ends cluster in 2027–29.
 
-- **Battery volumes are huge, and installation quality is poor.**
-  - The Cheaper Home Batteries Program passed 250,000 installs by Mar 2026 **[verified: Energy-Storage.news]**. Reports say 500,000 by Aug 2026 **[unverified: single secondary source]**.
-  - The Clean Energy Regulator reportedly found **more than 60% of inspected installations substandard** **[verified: secondary reporting of CER findings, RenewEconomy/Pulse]**.
-  - A workmanship warranty becomes worthless when the installer closes **[verified: Energy Matters]**. Rebate step-downs (from 1 May 2026) will shake out installers **[verified: Energy Matters]**.
-- **There is a regulatory template and an enforcement gap.**
-  - The UK's Renewable Energy Consumer Code requires members to **insure the workmanship warranties they issue** **[verified: reonic, describing the UK RECC]**.
-  - Australia's NETCC has no such requirement that I could find **[verified absence across CEC/Solar Victoria/NETCC sources; confirm with NETCC]**.
-  - A retailer expelled from NETCC in Dec 2025 kept trading **[verified: search summary of NETCC enforcement]**.
-  - Regulators need a lever, and an insurance-backed guarantee is one they can mandate. This is the "regulation as a channel" bet.
-- **EV resale values are uncertain.**
-  - The FBT exemption cost ~A$2B in 3 years against a A$205M forecast. It phases down from 1 Apr 2027 **[verified: NRMA, CarExpert, Savvy]**.
-  - Novated EV leases grew to "over 100,000" against a forecast of 4,700 **[unverified]**.
-  - Lessees carry the gap between the ATO residual and market value **[verified: Gridly; contract-dependent]**.
-  - Australian owner confidence in resale value fell from 76% (2024) to 56% (2026) **[verified: Insurance Business AU, NRMA data]**.
-  - A big wave of novated EVs reaches lease-end in 2027–29, into a market that also receives the post-FBT-phase-down supply.
-
-**Unfair inputs.**
-
-- **Strong:**
-  - Statistics and pricing under uncertainty.
-  - Ability to build telemetry and claims-data pipelines (CS).
-  - CFO credibility with capacity providers.
-  - Logistics and physical-asset background from Fulfilio (installers are a field-ops network).
-- **Weak:**
-  - **No insurance background or relationships with carriers and Lloyd's.** He needs an experienced underwriter or actuary co-founder.
-  - Policy lobbying is slow.
-  - Long-tail (10-year) risk means profit commission and credibility take years to arrive.
+**Unfair inputs.** Statistics and pricing under uncertainty; telemetry and claims-data pipelines (CS); CFO credibility with capacity providers; field-network experience from Fulfilio. **Weak:** no insurance background or relationships with carriers and Lloyd's (he needs an underwriter or actuary co-founder), policy lobbying is slow, and a 10-year tail delays profit commission and credibility.
 
 **Market and model.**
-
-- **Battery and solar guarantees:**
-  - ~150–250k battery installs and ~250–300k solar systems a year **[estimate]**.
-  - 30% penetration × ~A$180 ≈ **A$25–30M a year in gross written premium**.
-  - If it is mandated, A$70–100M.
-- **EV gap cover:** ~40–60k novated EVs a year **[estimate]** × 25% × A$500 ≈ A$5–8M of premium, plus fleets.
-- **MGA economics:**
-  - Commission of ~30% on ~A$30M of premium = A$9M revenue.
-  - EBITDA margin 35–45% → A$3–4M.
-  - Valued at 10–15x EBITDA → A$35–60M **[estimate; multiples unverified]**.
+- **Battery and solar guarantees:** ~150–250k battery and ~250–300k solar installs a year × 30% × ~A$180 ≈ **A$25–30M premium** (A$70–100M if mandated) **[estimate]**.
+- **EV gap cover:** ~40–60k novated EVs a year × 25% × A$500 ≈ A$5–8M, plus fleets **[estimate]**.
+- **MGA economics:** ~30% commission on A$30M = A$9M revenue → A$3–4M EBITDA → A$35–60M at 10–15x **[estimate; multiples unverified]**.
 - **Comparables:**
-  - Steadfast's agencies place large premium volumes, and it consolidated seven MGAs into Miramar (which bought Sports Underwriting Australia, May 2026) **[verified: Insurance Asia News]**.
-  - KKR, Dragoneer and Amwins proposed buying Steadfast at ~A$5.5B, with Amwins taking the agencies **[verified: Coverager/The Insurer]**. That shows strategic demand for AU underwriting agencies.
+  - Steadfast folded seven MGAs into Miramar, which bought Sports Underwriting Australia in May 2026 **[verified: Insurance Asia News]**.
+  - KKR, Dragoneer and Amwins proposed buying Steadfast at ~A$5.5B, with Amwins taking the agencies **[verified: Coverager]**.
 
 **Capital and structure.**
-
-- **Funding:**
-  - VC or insurtech seed of A$2–4M, plus founder money of A$0.5M.
-  - The carrier provides risk capital. A fronting arrangement plus reinsurance is possible.
+- **Funding:** A$2–4M insurtech seed plus A$0.5M from the founder. The carrier holds the risk capital (fronting plus reinsurance possible).
 - **Regulation:**
-  - Start as an authorised representative of an existing underwriting agency, then get his own AFSL (general insurance) in year 2.
+  - Start as an authorised representative of an existing agency; own AFSL (general insurance) in year 2.
   - Retail products need DDO target-market determinations.
-  - EV gap cover sold alongside finance risks ASIC's **add-on insurance deferred-sales model**. Sell it B2B through fleets and packagers, or as embedded cover, to avoid that.
-- **Founder ownership:** ~55–65% after seed plus a co-founder underwriter, then ~40–50% after a Series A if needed.
+  - EV cover sold with finance hits ASIC's add-on insurance deferred-sales model, so sell it B2B through fleets and packagers.
+- **Founder ownership:** ~55–65%, falling to ~40–50% after a Series A.
 
 **Outcome distribution (10 years).**
 
@@ -363,71 +285,23 @@ The capital and claims risk sits with a carrier (Lloyd's syndicate or local insu
 
 ### D. "Mark": an independent loan-level valuation and monitoring utility for private credit held by super funds
 
-**One-liner.** An AI-plus-analyst service that independently values and monitors private-credit loans (non-property and property) for super funds, platforms and credit managers.
+**One-liner.** AI-plus-analyst quarterly marks, covenant early-warning and ASIC/APRA-ready reporting on private-credit loans. Super funds, platforms and credit managers pay ~1–4 bps on assets covered (~A$40–250k per mandate a year).
 
-- **What it produces:**
-  - Quarterly marks.
-  - Early-warning covenant analytics.
-  - ASIC- and APRA-ready reporting.
-- **Who pays:** asset owners and managers, at ~1–4 bps on assets covered or ~A$40–250k per mandate a year.
+**Why now.** ASIC's private debt review flagged valuation, fee and concentration problems, and its 2026 priorities target funds lending to retail clients **[verified: KWM, HSF Kramer]**. APRA's SPS 530 valuation expectations already apply to super funds' unlisted assets **[estimate: not re-verified]**. Private credit is ~A$225B, with super funds holding ~A$30–35B **[verified]**. LLMs remove most of the cost of reading loan files at scale. It fits the brief's pattern: a data layer sold to whoever owns the capital.
 
-**Why now.**
+**Unfair inputs.** Statistics and CS to build the engine, plus CFO and BCG access to super funds. **Weak:** valuation runs on reputation (Kroll, Lincoln, Houlihan, the Big 4 and Evidentia are incumbents), he has no valuation-firm brand, and CPS 230 vendor onboarding takes 6–18 months.
 
-- **ASIC is scrutinising private credit.** Its 2025–26 private debt review flagged valuation, fee and concentration issues, and its 2026 priorities target funds lending to retail clients **[verified: KWM, HSF Kramer, savings.com.au]**.
-- **APRA's valuation standard applies.** APRA's SPS 530 valuation expectations already apply to super funds' unlisted assets **[estimate: from knowledge, not re-verified]**.
-- **The asset pool is large.** Private credit is ~A$225B; super funds hold ~A$30–35B **[verified]**.
-- **AI changes the cost.** Reading loan files and management accounts at scale was the cost barrier, and LLMs remove most of it.
-- **Pattern from earlier rounds:** this is a data layer sold to whoever owns the capital, the configuration the brief says works.
+**Market and model.** About A$20–50M a year of addressable Australian fees **[estimate]**. A$3–6M ARR by year 5 with 10–20 mandates, then a sale at 4–8x revenue **[estimate]**. **Capital:** bootstrap to A$1M ARR, then raise A$3–5M; founder keeps ~60–70%.
 
-**Unfair inputs.**
+**Outcome distribution (10 years).** Fail 40% (A$2.3M); modest 35% (A$3.2M, A$2–3M ARR); good 20% (A$6M); great 5% (A$15M). **EV ≈ A$3.9M; median ≈ A$3.2M.**
 
-- Statistics plus CS to build the engine.
-- CFO credibility with investment teams.
-- BCG networks into super funds.
-- **Weak:**
-  - Valuation is reputation-led: Kroll, Lincoln, Houlihan, the Big 4 and Evidentia already serve this.
-  - Long procurement (CPS 230 vendor onboarding takes 6–18 months, round 3).
-  - He has no valuation-firm brand.
+**Time to replace $500k.** About 5–6 years. Pilots could run while employed, but conflicts are likely.
 
-**Market and model.**
+**Job satisfaction.** Medium-high. It's model-building, but becomes audit-like: he advises on risk rather than taking it.
 
-- **Australian market:** perhaps A$20–50M a year of addressable fees **[estimate]**.
-- **Path:** A$3–6M ARR by year 5 if he wins 10–20 mandates.
-- **Exit:** sale to a global valuation or data firm at 4–8x revenue **[estimate]**.
-- **Bigger version:** the international play is larger, but competes with 73 Strings and Chronograph **[unverified funding figures]**.
+**Key risks.** A trusted incumbent adds AI and undercuts him; procurement outlasts his runway; liability for wrong marks. **Kills it:** fewer than 2 paid pilots in 9 months.
 
-**Capital and structure.** Bootstrap to A$1M ARR, then raise A$3–5M of seed or Series A. Founder ownership ~60–70%.
-
-**Outcome distribution (10 years).**
-
-| Outcome | P | Founder wealth | What it looks like |
-|---|---|---|---|
-| Fail | 40% | A$2.3M | Procurement stalls; return to work after year 2 |
-| Modest | 35% | A$3.2M | A$2–3M ARR consultancy-like business |
-| Good | 20% | A$6M | A$8M ARR, sold at 5x |
-| Great | 5% | A$15M | Becomes the AU standard; international sale |
-
-**EV ≈ A$3.9M; median ≈ A$3.2M.**
-
-**Time to replace $500k.** About 5–6 years. Pilots could run while employed, but conflicts are likely if his employer has investors in the space.
-
-**Job satisfaction.** Medium-high. It's model-building, but the work becomes repetitive and audit-like, and he advises on risk rather than taking it.
-
-**Key risks.**
-
-1. A trusted-brand incumbent adds AI and undercuts him.
-2. Procurement cycles outlast his runway.
-3. Liability for wrong marks; professional-indemnity insurance needed.
-
-**What kills it:** fewer than 2 paid pilots in 9 months.
-
-**90-day test.**
-
-- Meet 12 super-fund and credit-manager CIOs and risk teams.
-- **Pass:** ≥2 paid pilots at ≥A$40k, or a written RFP.
-- **Kill:** "we use Kroll" from everyone.
-
----
+**90-day test.** Meet 12 CIO and risk teams. **Pass:** ≥2 paid pilots at ≥A$40k. **Kill:** everyone says "we use Kroll".
 
 ## Cross-idea comparison
 
@@ -466,14 +340,6 @@ All of these are **[estimate]**, built from the bucket values above. The useful 
 3. **C. VoltCover MGA** (battery/solar workmanship guarantees plus EV residual-value cover). EV ~A$5.4M, median ~A$3.2M; most binary, a bold option worth 90 days of carrier soundings.
 4. **D. Mark** (private-credit valuation utility for super funds). EV ~A$3.9M, median ~A$3.2M; sound pattern, but incumbents are trusted and procurement is slow.
 
-## Sources used (search summaries; primary pages were often unreachable)
+## Sources
 
-- MYOB Business Monitor via ITBrief / CA ANZ (Aug 2025); SmartCompany (500k+ businesses owned by people aged 60+); Dynamic Business (calls for an SBA-style guarantee).
-- searchfunder.com AU threads; businessesforsale.com.au (vendor finance >40%, unverified); Bsale Q1 2026 report.
-- Live Oak IR / SBA ranking; Cobalt Intelligence (charge-offs, unverified); Barron's via iTiger (SBA defaults).
-- ASIC private debt review via Super Review, KWM, HSF Kramer; Tanarra / GSFM Feb 2026.
-- Salter Brothers / Broker News (Causeway acquisition); NAB rent-roll lending policy pages.
-- Fundbox AU release (medianet, Jan 2026); FF News (Stripe Capital AU, Fundsquire).
-- Energy-Storage.news (CHBP 250k); McKercher (500k, unverified); Energy Matters (rebate changes, workmanship warranty); RenewEconomy / Pulse (CER >60% substandard); reonic (UK RECC insurance-backed warranties); Solar Victoria / CEC (NETCC).
-- NRMA, CarExpert, Savvy (FBT phase-down, A$2B cost); Gridly (residual gap, used EV market); Insurance Business AU (resale confidence 76%→56%).
-- Insurance Asia News (Miramar); Coverager / The Insurer (KKR–Dragoneer–Amwins proposal for Steadfast).
+Cited inline. Main ones: MYOB/CA ANZ, SmartCompany, Bsale Q1 2026, Live Oak/SBA, ASIC private debt review (via KWM, HSF Kramer, Super Review), Tanarra/GSFM, Salter Brothers, NAB rent-roll policy, Fundbox/FF News, Energy-Storage.news, Energy Matters, RenewEconomy, NRMA/CarExpert, Insurance Business AU, Coverager, Insurance Asia News.
