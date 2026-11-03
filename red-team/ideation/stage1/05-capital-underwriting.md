@@ -13,18 +13,14 @@
 I generated 14 ideas: SaaS revenue-based finance, R&D tax lending, receivables finance, EV fleet leasing, rent-roll lending, a recurring-commission book lender, an SME succession credit fund, a permanent-capital succession holdco, a battery/solar warranty MGA, EV residual-value cover, strata defect lending, a private-credit valuation utility, a super-fund buyout co-investment vehicle, and AI-underwritten SME credit.
 
 **Cut, and why:**
-
-- **SaaS revenue-based finance and R&D tax lending: crowded, with capital already arrived.**
-  - Players already in the market:
-    - Fundbox entered Australia in Jan 2026 with an MA Financial-backed warehouse **[verified: medianet/Fundbox release]**.
-    - Stripe Capital is launching in Australia **[verified: FF News]**.
-    - Fundsquire reports growth in grant advances and RBF (Apr 2026) **[verified: FF News]**.
-    - Outfund, Lighter Capital and Choco Up are also active **[verified: various]**.
-  - His SaaS-CFO network gives him deal flow, but no pricing edge. The spread gets competed to the cost of funds.
-- **AI-underwritten tradie and SME credit, and receivables finance:** Prospa, Judo, ScotPac/Business Fuel and Moula already do this, cheaply. The capital provider wins this game, not the model.
-- **EV fleet leasing:** capital-heavy and commoditised. The only interesting part is residual-value risk, which I've folded into idea C.
-- **Strata defect lending:** a real niche (Lannock already operates in it), but it's small and slow.
-- **Permanent-capital succession holdco:** that's an equity and operator idea, and other lenses will likely cover it. Here it appears only as an equity kicker inside idea A.
+- **SaaS revenue-based finance and R&D tax lending: crowded, with capital already in.**
+  - Fundbox entered Australia in Jan 2026 with an MA Financial-backed warehouse **[verified: Fundbox release]**.
+  - Stripe Capital is launching locally, and Fundsquire, Outfund and Lighter are active **[verified: FF News]**.
+  - His SaaS-CFO network gives him deal flow, but no pricing edge.
+- **AI-underwritten SME credit and receivables finance:** Prospa, Judo, ScotPac and Moula already do this; the cost of funds decides who wins.
+- **EV fleet leasing:** capital-heavy and commoditised. Its residual-value risk is folded into idea C.
+- **Strata defect lending:** small, and Lannock already serves it.
+- **Succession holdco:** an equity and operator idea for other lenses; here it appears only as idea A's equity kicker.
 
 ## The four ideas kept
 
@@ -43,65 +39,47 @@ I generated 14 ideas: SaaS revenue-based finance, R&D tax lending, receivables f
 - **Who pays:** borrowers pay interest of about 10.5–14% plus a 1–2% establishment fee. Limited partners pay management fees and carry.
 
 **Why now (2026).**
-
-- **Sellers are retiring.**
-  - 48% of baby-boomer owners plan to exit within 1–5 years, and only 24% have an exit plan **[verified: MYOB Business Monitor via ITBrief / CA ANZ, Aug 2025]**.
-  - More than 500,000 businesses are owned by people aged 60+ **[verified: SmartCompany]**.
-- **Buyers can't easily borrow against goodwill.**
-  - Banks are reluctant to lend unsecured against goodwill, and searchers report that banks and second-tier lenders show no appetite for true SME acquisition finance **[unverified: searchfunder.com forum posts; businessesforsale]**.
-  - More than 40% of SME sales now involve vendor finance **[unverified: marketing source]**. That is the market quietly signalling unmet credit demand.
-  - Accountants and business groups are lobbying for US-style SBA loan guarantees **[verified: SmartCompany, Dynamic Business]**. If a guarantee ever arrives, an incumbent specialist takes most of it.
-- **Capital is available.**
-  - Australian private credit is ~A$225B, growing ~9% a year **[verified: ASIC private debt review via Super Review; Tanarra]**.
-  - Super funds' private-credit holdings are forecast to rise from ~A$30B to ~A$35.5B in FY26 **[verified: Tanarra/GSFM]**.
-  - ASIC's main concern is real-estate concentration, about half the market **[verified: KWM on ASIC review]**. Non-property, cash-flow credit with clean governance is what allocators say they want **[estimate]**.
-- **AI makes underwriting cheap.** Ledger-level underwriting of a A$3M business used to need a credit analyst for a week. With LLM agents it is a few hours plus human sign-off. That makes A$1–5M tickets economic for a non-bank **[estimate]**.
-- **The US proof.**
-  - Live Oak Bank is the largest SBA 7(a) lender: ~US$2.7–2.9B in FY25 approvals, with a dedicated search-fund team **[verified: SBA ranking via Live Oak IR]**.
-  - Its 10-year average net charge-offs are ~0.27% against the SBA's ~0.65% **[unverified: Cobalt Intelligence]**.
-  - The US market exists because of the SBA guarantee. Australia has no guarantee, so pricing must carry the loss, which means 11–14% coupons and lower leverage (≤3x EBITDA senior).
+- **Sellers:**
+  - 48% of baby-boomer owners plan to exit within 1–5 years, and only 24% have an exit plan **[verified: MYOB via ITBrief / CA ANZ, Aug 2025]**.
+  - 500,000+ businesses are owned by people aged 60+ **[verified: SmartCompany]**.
+- **Buyers:**
+  - Banks are reluctant to lend against goodwill **[unverified: searchfunder.com posts; businessesforsale]**.
+  - Over 40% of SME sales use vendor finance **[unverified: marketing source]**, a sign of unmet credit demand.
+  - Accountants are lobbying for an SBA-style guarantee **[verified: SmartCompany, Dynamic Business]**. If one ever arrives, an incumbent specialist captures it.
+- **Capital:**
+  - Australian private credit is ~A$225B, growing ~9% a year **[verified: ASIC review via Super Review; Tanarra]**.
+  - Super funds' holdings are forecast to rise from ~A$30B to ~A$35.5B in FY26 **[verified: Tanarra/GSFM]**.
+  - ASIC's main concern is real estate, about half the market **[verified: KWM]**. Non-property cash-flow credit with clean governance is what allocators want **[estimate]**.
+- **AI:** ledger-level underwriting of a A$3M business falls from an analyst-week to a few hours plus human sign-off, which makes A$1–5M tickets economic **[estimate]**.
+- **US proof:**
+  - Live Oak is the largest SBA 7(a) lender, with ~US$2.7–2.9B of FY25 approvals and a search-fund team **[verified: Live Oak IR / SBA]**.
+  - Its net charge-offs are reportedly ~0.27% against the SBA's ~0.65% **[unverified]**.
+  - Australia has no guarantee, so pricing must carry the loss: 11–14% coupons and senior leverage of at most 3x EBITDA.
 
 **Unfair inputs.**
-
 - **Strong:**
   - Statistician plus CFO: he can build and defend a loss model to investment committees.
-  - Ex-BCG and two exits: credible to family offices and investors from his prior exits as a first-time manager.
-  - Has been on both sides of a business sale (Fulfilio to Australia Post).
-  - A heavy AI user, so he can build the underwriting stack himself.
-- **Medium:**
-  - Networks with accountants and brokers through LocalAgentFinder and the real-estate industry.
-  - Melbourne SME networks.
-- **Weak spots:**
-  - **No credit track record.** First-time credit managers struggle to raise. He needs a partner with 10+ years in workout and recovery, or a seasoned credit lead, and a borrowed track record via a platform: an established trustee or responsible entity, or a credit-manager seeder.
-  - He has never run a loan book through a downturn.
+  - BCG plus two exits: credible to family offices and to investors from his prior exits.
+  - He has sold a business himself (Fulfilio).
+  - He can build the AI underwriting stack.
+- **Medium:** accountant, broker and real-estate networks.
+- **Weak:**
+  - **No credit track record, and he has never run a book through a downturn.** He needs a seasoned credit and workout partner, and a borrowed platform: a professional trustee or a credit-manager seeder.
 
 **Market and model.**
-
-- **Market size:**
-  - Businesses changing hands in the A$1–20M EV band: perhaps 3,000–6,000 transactions a year nationally **[estimate; no official count]**.
-  - Even 2% at A$2.5M average loans is ~A$150–300M a year of origination capacity **[estimate]**.
-  - The average asking price on Bsale is A$673k (Mar 2026) **[verified: Bsale Q1 2026]**. That figure is dominated by micro deals that sit below this target band.
-- **Fund economics:**
-
-  | | |
-  |---|---|
-  | Fund size | A$100M year 2 → A$300M year 5 → A$600M year 8 **[estimate]** |
-  | Management fee | 1.25–1.75% |
-  | Carry | 15–20% over an 8% hurdle |
-  | Target net LP return | 9–11% |
-  | Fee revenue at A$300M | ~A$4.5M a year |
-  | Platform cost | A$2–2.5M a year (team of 6–8, trustee, audit, compliance) |
-  | Carry over 10 years | ~A$5–15M across vintages if net returns hold **[estimate]** |
-
-- **Alternative structure:** become a balance-sheet lender with a bank warehouse. That captures the full spread but needs ~A$15–25M of equity.
+- **Market:** perhaps 3,000–6,000 transactions a year in the A$1–20M EV band **[estimate; no official count]**. Lending on 2% of them at A$2.5M each is ~A$150–300M a year of origination capacity. For scale, Bsale's average asking price is A$673k (Mar 2026) **[verified]**, so most listings are micro deals below this band.
+- **Fund path:** A$100M in year 2 → A$300M in year 5 → A$600M in year 8 **[estimate]**.
+- **Terms:** 1.25–1.75% management fee; 15–20% carry over an 8% hurdle; 9–11% net to LPs.
+- **At A$300M:** ~A$4.5M a year in fees against a A$2–2.5M platform cost (6–8 people plus trustee, audit and compliance). Carry across vintages is ~A$5–15M over 10 years **[estimate]**.
+- **Alternative:** a balance-sheet lender with a bank warehouse keeps the full spread but needs A$15–25M of equity.
 - **Comparables:**
-  - Live Oak (US).
-  - Salter Brothers bought Causeway (A$600M of funds under management) to build out corporate credit to companies with A$5–300M revenue **[verified: Salter Brothers / Broker News]**. That shows big managers are moving toward this space, which is both an exit path and a competitive threat.
-  - MA Financial, Metrics and Qualitas: listed AU credit managers that trade on fee-related earnings multiples **[unverified multiples; ~10–15x FRE typical]**.
+  - Live Oak.
+  - Salter Brothers bought Causeway (A$600M) to build corporate credit to A$5–300M-revenue firms **[verified: Broker News]**. That makes it both a competitor and an exit path.
+  - MA Financial, Metrics and Qualitas trade at roughly 10–15x fee-related earnings **[unverified]**.
 
 **Capital and structure.**
 
-- **Founder money:** A$0.4–0.6M in operating costs for the first 18 months, plus a 1–2% GP commitment (A$1–2M; part can be deferred or financed).
+- **Founder money:** A$0.4–0.6M of operating costs over 18 months, plus a ~1% GP commitment on a A$50M first close (~A$0.5M, part deferrable). Total: within his A$0.75–1.2M.
 - **Seeding:** a family office or seeder anchors A$25–50M and takes 15–25% of GP economics.
 - **Regulation:**
   - Business-purpose lending generally doesn't need an Australian Credit Licence (the NCCP's predominant-purpose test), but **unfair-contract-terms penalties** (since Nov 2023) apply to small-business loan contracts.
@@ -120,23 +98,13 @@ I generated 14 ideas: SaaS revenue-based finance, R&D tax lending, receivables f
 
 **EV ≈ A$5.3M; median ≈ A$3.2M** (in the modest bucket). The upside skew is real. The median only matches staying.
 
-**Time to replace $500k.**
-
-- About 3–4 years: fee income at ~A$100–150M of funds under management, around year 3.
-- **Pre-work can start while employed:**
-  - Outcome-data collection.
-  - Underwriting model on historical deals.
-  - LP soundings.
-  - Recruiting a credit partner.
-- These require **disclosure and consent under his employment contract** (outside-interests clause), and no lending until he leaves.
-- Realistic quit point: when A$25M+ of anchor capital is soft-circled.
+**Time to replace $500k.** About 3–4 years, once ~A$100–150M is under management. **Can start while employed (with disclosure and consent under his outside-interests clause):** outcome data, the model, LP soundings and recruiting a credit partner. No lending until he leaves. Quit when A$25M+ of anchor capital is soft-circled.
 
 **Job satisfaction.** High.
-
-- Building the underwriting model and the outcome dataset is exactly his statistics and CS work.
-- IC meetings and LP raising use his CFO and BCG skills.
-- Every deal is a different business, so curiosity stays fed.
-- The downside is workouts: by year 4, enforcing against a failing family business takes ~20% of the time and is draining.
+- The underwriting model and outcome dataset are his statistics and CS work.
+- Investment-committee work and LP raising use his CFO and BCG skills.
+- Every deal is a new business.
+- **Downside:** by year 4, workouts against failing family businesses take ~20% of his time and are draining.
 
 **Key risks.**
 
@@ -147,16 +115,9 @@ I generated 14 ideas: SaaS revenue-based finance, R&D tax lending, receivables f
 **What kills it:** fewer than ~A$30M raised by month 18, or vintage-1 losses above 4% a year.
 
 **90-day test (~A$20–30k, while employed and with consent).**
-
-- **Supply of deals:**
-  - Interview 25 business brokers, M&A accountants and searchers (Link, Bsale, ABB, Vic SME advisory firms).
-  - **Pass:** ≥30 live deals in the A$1–15M EV band with a documented financing gap in a quarter, of which ≥10 buyers say they would pay ≥11%.
-- **Loss model:**
-  - Score 20 historical deals (closed 2019–23) from advisers' files.
-  - **Pass:** the model separates performers from failures. Even rough AUC above 0.7 counts.
-- **Capital:**
-  - Soundings with 15 family offices or HNW investors, plus 2 seeders.
-  - **Pass:** ≥A$25M soft-circled, or one seeder term sheet.
+- **Deals:** interview 25 business brokers, M&A accountants and searchers. **Pass:** ≥30 live A$1–15M deals with a documented financing gap in a quarter, of which ≥10 buyers would pay ≥11%.
+- **Model:** score 20 deals closed in 2019–23 from advisers' files. **Pass:** AUC above ~0.7 in separating performers from failures.
+- **Capital:** sound out 15 family offices or HNW investors and 2 seeders. **Pass:** ≥A$25M soft-circled, or a seeder term sheet.
 - **Kill:** fewer than 15 qualified deals, or under A$10M of soft interest.
 
 ---
@@ -257,7 +218,7 @@ The capital and claims risk sits with a carrier (Lloyd's syndicate or local insu
 | Good | 20% | A$8M | A$30M premium; sold to Steadfast/Miramar, Amwins or Insurance House at year 7–8 |
 | Great | 10% | A$25M | Mandate arrives; becomes the national guarantee scheme operator; plus EV RV data business |
 
-**EV ≈ A$5.4M; median ≈ A$3.2M** (cumulative 70% falls in modest). It has the biggest spread and the most binary outcome of the four.
+**EV ≈ A$5.7M; median ≈ A$3.2M** (the 50th percentile falls in the modest bucket). It has the biggest spread and the most binary outcome of the four.
 
 **Time to replace $500k.** About 4–6 years. Little can start while employed beyond carrier and installer soundings.
 
@@ -272,14 +233,12 @@ The capital and claims risk sits with a carrier (Lloyd's syndicate or local insu
 **What kills it:** no binder by month 9.
 
 **90-day test (~A$25k).**
-
-- **Capacity:**
-  - Meet 6 capacity providers (Lloyd's via Sydney coverholders, and local insurers).
-  - **Pass:** ≥2 written indications of appetite.
-- **Demand:** ≥5 retailers or installers doing more than 1,000 installs a year sign letters of intent at ≥A$120 per install.
-- **Regulator:** a meeting with Solar Victoria or the Clean Energy Regulator.
-- **Data:** an installer failure-rate dataset assembled from ASIC insolvency records.
-- **Kill:** zero carrier appetite.
+- Meet 6 capacity providers (Lloyd's coverholders and local insurers).
+- Approach installers doing more than 1,000 installs a year.
+- Meet Solar Victoria or the Clean Energy Regulator.
+- Build an installer-failure dataset from ASIC insolvency records.
+- **Pass:** ≥2 written carrier indications, and ≥5 installer letters of intent at ≥A$120 per install.
+- **Kill:** no carrier appetite.
 
 ---
 
@@ -293,7 +252,7 @@ The capital and claims risk sits with a carrier (Lloyd's syndicate or local insu
 
 **Market and model.** About A$20–50M a year of addressable Australian fees **[estimate]**. A$3–6M ARR by year 5 with 10–20 mandates, then a sale at 4–8x revenue **[estimate]**. **Capital:** bootstrap to A$1M ARR, then raise A$3–5M; founder keeps ~60–70%.
 
-**Outcome distribution (10 years).** Fail 40% (A$2.3M); modest 35% (A$3.2M, A$2–3M ARR); good 20% (A$6M); great 5% (A$15M). **EV ≈ A$3.9M; median ≈ A$3.2M.**
+**Outcome distribution (10 years).** Fail 40% (A$2.3M); modest 35% (A$3.2M, A$2–3M ARR); good 20% (A$6M); great 5% (A$15M). **EV ≈ A$4.0M; median ≈ A$3.2M.**
 
 **Time to replace $500k.** About 5–6 years. Pilots could run while employed, but conflicts are likely.
 
@@ -308,9 +267,9 @@ The capital and claims risk sits with a carrier (Lloyd's syndicate or local insu
 | Idea | EV (10-yr founder wealth) | Median | P(beat staying, ~A$3.3M) | Years to A$500k | Start while employed? |
 |---|---|---|---|---|---|
 | A. Succession Credit | **A$5.3M** | A$3.2M | ~35–40% | 3–4 | Pre-work yes (with consent) |
-| C. VoltCover MGA | A$5.4M | A$3.2M | ~30% | 4–6 | Soundings only |
+| C. VoltCover MGA | A$5.7M | A$3.2M | ~30% | 4–6 | Soundings only |
 | B. BookCo | A$4.7M | A$3.6M | ~40–45% | 3–5 | Yes (data and engine) |
-| D. Mark | A$3.9M | A$3.2M | ~25% | 5–6 | Pilots, with conflict risk |
+| D. Mark | A$4.0M | A$3.2M | ~25% | 5–6 | Pilots, with conflict risk |
 
 All of these are **[estimate]**, built from the bucket values above. The useful signal is the ranking and the shape of the distribution, not the decimals.
 
@@ -319,26 +278,30 @@ All of these are **[estimate]**, built from the bucket values above. The useful 
 **Recommendation:** build an acquisition-credit platform for the boomer business transfer, starting as BookCo (rent rolls and broker books priced with the round-3 engine), then widening into general SME succession lending as the fund grows.
 
 **Why:**
-
-1. **It sells capital to the demand that exists.** Hundreds of thousands of owners need buyers, and buyers can't borrow against goodwill. The brief's pattern says the founder wins when pricing risk, not running operations, is the job.
+1. **It sells capital where the demand already is.**
+   - Hundreds of thousands of owners need buyers, and those buyers can't borrow against goodwill.
+   - The job is pricing risk, not running operations, which is where earlier rounds found his edge.
 2. **The round-3 leading candidate becomes the first sleeve of a much larger market.**
-   - The engine's value (~$50–100k per deal to the buyer) is captured as spread and carry, not report fees.
-   - It is no longer limited to ~250–900 rent-roll deals; the outcome dataset compounds across verticals.
-3. **The structure fits his constraints.**
+   - The engine's ~$50–100k per deal is captured as spread and carry.
+   - The outcome dataset compounds across verticals.
+3. **It fits his constraints.**
    - No personal guarantees.
-   - Personal capital of A$0.5–1M as GP commitment plus operating costs, within his A$0.75–1.2M.
-   - Fee income replaces salary by about year 3.
+   - ~A$1M of personal capital at risk.
+   - Fees replace his salary in about year 3.
    - Pre-work can start while employed, with consent.
-4. **The upside is genuinely large.** GP stakes in Australian credit managers sell; a government guarantee scheme would be a windfall; super-fund money arrives after a 5-year record.
+4. **The upside is real.**
+   - GP stakes in Australian credit managers are sellable.
+   - A government guarantee would be a windfall.
+   - Super-fund money follows a 5-year record.
 
-**Why not C, despite a similar EV:** its distribution is more binary (45% fail), it depends on an insurance co-founder and carrier appetite he doesn't have, and the payoff is later. It's the best **option** to keep alive: 90 days of carrier soundings is cheap. A credit platform could later add warranty or RV risk as a sister vehicle.
+**Why not C, despite the highest raw EV (~A$5.7M):** its distribution is more binary (45% fail), it depends on an insurance co-founder and carrier appetite he doesn't have, and the payoff is later. It's the best **option** to keep alive: 90 days of carrier soundings is cheap. A credit platform could later add warranty or RV risk as a sister vehicle.
 
 **Ranked list:**
 
 1. **A. Succession Credit** (acquisition-finance fund for the boomer business transfer). EV ~A$5.3M, median ~A$3.2M; best risk-adjusted upside with a fee floor.
 2. **B. BookCo** (stretch capital for recurring-commission books, rent rolls first). EV ~A$4.7M, median ~A$3.6M; highest floor and the cheapest test; the natural wedge into A.
-3. **C. VoltCover MGA** (battery/solar workmanship guarantees plus EV residual-value cover). EV ~A$5.4M, median ~A$3.2M; most binary, a bold option worth 90 days of carrier soundings.
-4. **D. Mark** (private-credit valuation utility for super funds). EV ~A$3.9M, median ~A$3.2M; sound pattern, but incumbents are trusted and procurement is slow.
+3. **C. VoltCover MGA** (battery/solar workmanship guarantees plus EV residual-value cover). EV ~A$5.7M, median ~A$3.2M; highest EV but most binary, a bold option worth 90 days of carrier soundings.
+4. **D. Mark** (private-credit valuation utility for super funds). EV ~A$4.0M, median ~A$3.2M; sound pattern, but incumbents are trusted and procurement is slow.
 
 ## Sources
 
