@@ -1,0 +1,125 @@
+# Stage 1: Comparison & Marketplace Builder (LAF pattern)
+
+Agent 06, 3 Nov 2026. Lens: where matching, transparency or intermediation is missing, and the LocalAgentFinder (LAF) playbook transfers. That playbook is a high-stakes, infrequent, local purchase; a confused consumer; fragmented suppliers who pay on success; and a ranking built on outcome data. The lens also covers AI agents buying on behalf of consumers. 14 web searches were used. Figures are labelled [verified: source], [estimate] or [unverified]. "Verified" here means the figure was confirmed in search-result summaries; primary sources were not opened.
+
+## How I filtered
+
+**What the LAF playbook needs to work:**
+1. A big ticket with a percentage fee pool for the supplier, such as an agent's commission.
+2. An infrequent purchase, so consumers have no prior knowledge.
+3. A supply side that is fragmented and has spare capacity, so suppliers will pay for introductions.
+4. Outcome data that lets the platform rank suppliers better than reviews do.
+
+**The founder's edges, from earlier rounds:** pricing and underwriting under uncertainty; data sold to whoever owns demand or capital; capital allocation; physical-asset arbitrage. The earlier rounds have a clear lesson: **capture the edge as equity, not as report fees.** That lesson matters just as much for marketplaces. A comparison site earns a small cut of a transaction, while whoever *owns the asset* earns the spread.
+
+**Ideas generated (about 14), and why most were dropped:**
+
+| Idea | Fate |
+|---|---|
+| Solar, battery and installer comparison | **Kept in modified form (C).** But the category is consolidating into energy retailers: Origin is acquiring SolarQuotes, and Flow Power bought Solar Choice [verified: ESD News; MergerLinks 2025-11-25]. |
+| Energy-plan comparison using CDR data | Dropped as a standalone. Energy CDR uptake is thin, the field is crowded (Compare the Market owns iSelect [verified: PitchBook]), and the government's Energy Made Easy is free. Folded into C. |
+| Childcare place matching | Dropped. Places are short, so providers don't pay for leads, and government already runs StartingBlocks. |
+| Conveyancer and lawyer comparison | Dropped. Tickets are small (about $1–2k), and LAF already runs a conveyancing practice (it acquired Dott & Crossitt in Feb 2024) [verified: Mergr]. |
+| Builder and trades marketplace | Dropped. hipages and Oneflare are incumbents, and AI voice and dispatch tools (Avoca at US$1B, Probook US$34M Series A [verified: search summaries]) serve the supplier side. Kept only as a data input to D. |
+| NDIS and home-care worker marketplace | Dropped. Mable has about A$100M revenue, is reportedly breaking even [unverified: The Weekly Source], and is backed by General Atlantic. Operating a workforce is ops-heavy, which earlier rounds penalised. |
+| SME loan marketplace | Dropped as a standalone. It is crowded and gated by an ACL. Folded into B as acquisition debt. |
+| Strata manager switching | Dropped. Switching volume is thin and approval goes through owners'-corporation committees. |
+| Aged care and home care selection | **Kept as (A), widened to the whole later-life move.** |
+| SME business sales | **Kept as (B), built around capturing the edge as equity.** |
+| Data layer that AI agents query | **Kept as (D), the bold option.** |
+
+---
+
+## Idea A: "LaterLife": a navigator for the whole move into aged care (care, home sale and RAD funding)
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | **What it is:** a family-facing service, part AI and part human navigator, for the whole move into care. It covers choosing home care or a residential home, the means test, negotiating the RAD or DAP, choosing the agent to sell the family home, and bridging finance for the RAD. **Who pays:** providers (a placement fee when a resident moves in), selling agents (an LAF-style success referral, in a structure counsel has checked), and lenders (bridging commission through a separate credit-representative entity). Families pay nothing, or an optional fixed advice fee. |
+| **Why now (2026)** | **The new Act:** the Aged Care Act 2024 commenced on 1 Nov 2025, and Support at Home replaced the old home care packages [verified: Wikipedia; Health fact sheets]. **More fee complexity:** extra-service fees become the "Higher Everyday Living Fee" from 1 Nov 2026 [unverified: provider summary]. **Long queues:** about 100–150k people wait for their assessed home-care level, with average waits of about 12–13 months [verified: The Weekly Source, figures conflict]. **Expensive rooms:** room prices top $600k, and the Melbourne average RAD is quoted at about $740k [unverified]. **High occupancy:** residential occupancy hit a 9-year high of 93% in May 2026 [verified: Mirus via Inside Ageing]. **Lending interest:** specialist lenders (La Trobe, Bridgit, Household Capital) are now targeting aged-care loans, and the trade press calls them "tipped to go mainstream" [verified: The Adviser]. |
+| **Unfair inputs** | **The real wedge:** LAF know-how and relationships. The founder knows how to rank agents and charge success fees, and *most aged-care entries trigger a home sale*. No aged-care navigator owns the property side, and no agent-comparison site owns the care side. **Analytical edge:** statistician-CFO skill on the means test, RAD versus DAP, and the pension and tax effects of keeping or selling the home. That is underwriting under uncertainty applied to a family decision. **Weak spots:** no aged-care network; no clinical credibility; and families in crisis need human empathy at scale, which is an ops cost. |
+| **Market & model** | **Volume:** about 77,400 permanent residential admissions in 2024–25 [verified: GEN fact sheet], and about 106k home-care admissions [verified: GEN]. **Revenue per family that enters residential care** [estimate]: placement fee about $1.5–3k [unverified: providers describe an "industry-standard placement introduction fee"]; agent referral about $3–4k on the roughly 40% who sell (a Melbourne house about $900k × 2% commission × 20% referral share); bridging-loan commission about $1–2k on about 25%. **Blended:** about $3.5–5k per placed family. **Scale:** 2% share is about 1,550 families, or $6–8M revenue; 5% share is about $15–20M. **Comparables:** Aged Care Decisions, Carevo and Aged Care Guide run on provider-paid fees, and none has reached big scale [unverified]. Mable shows the sector can produce a $1B company [unverified]. |
+| **Capital & structure** | **Funding:** bootstrap a concierge MVP for about $150k, then seed about A$2–3M. A strategic investor could join: a lender, LAF, REA/Domain, or a large not-for-profit provider. **Founder ownership:** about 65–75% after seed, about 50% after Series A. |
+| **Outcome distribution (10 yrs)** | P(fail) 40% → $1.0M. P(modest) 30% → $2.5M. P(good) 22% → $6M. P(great) 8% → $20M (exit to a lender, portal or insurer). **EV ≈ A$4.1M; median ≈ A$2.5M.** Values are founder 10-yr after-tax wealth on this path, including salary; staying employed is about A$3.0–3.4M over 10 years [estimate, extrapolated from the brief's 7-yr A$2.0–2.4M]. |
+| **Time to replace $500k** | **About 3–4 years.** **While employed:** the concierge test can run on evenings and weekends with a hired navigator. The jump comes at about 100 placements a month. |
+| **Job satisfaction** | **The pull:** high meaning, a live LAF playbook, and complex modelling (the means test is an optimisation problem). **The drain:** it is emotionally heavy and ops-and-people-heavy. The founder would be building a contact centre, not a data engine. Medium energy fit. |
+| **Key risks** | **(1) Supply-side willingness to pay falls as occupancy rises.** At 93% the good homes are full and don't pay for leads, so the platform is paid by the homes families least want. That is the LAF trap in reverse. **(2) Conflicted-referral scrutiny.** Vulnerable consumers, plus ACCC and Aged Care Quality Commission attention, plus the round-1 s 48A finding on rebates. Agent referrals must be structured as an engagement the family consents to. **(3) A long sales cycle and high touch** make CAC high. Google ads for "aged care" are expensive and dominated by providers. **What kills it:** providers won't pay placement fees at 93% occupancy, *and* families won't pay an advice fee. |
+| **90-day test** | **Setup:** run 40 Melbourne families through a concierge (one hired navigator, a Notion/LLM means-test tool, $25k of ads and GP or hospital-discharge outreach). **Proceed if:** ≥15 placements in 90 days; ≥10 signed provider fee agreements at ≥$1.5k; ≥30% of placed families with a home to sell take the agent introduction; and CAC per placement ≤$1.2k. **Kill if:** fewer than 5 providers will sign, or CAC is above $2.5k. |
+
+---
+
+## Idea B: "ExitIQ": a verified-financials marketplace for SME sales, with a holdco that buys the best deals
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | **What it is:** a seller-side "Verified Exit" product. It plugs into Xero or MYOB, normalises add-backs, and produces a calibrated P10–P90 valuation and risk band. It also matches sellers with buyers and acquisition lenders. Alongside it, the founder runs a **holdco, or co-invest fund, that buys the best-scored deals**, or co-invests with search funds using the engine. **Who pays:** sellers or brokers (about $2–5k per Verified Exit pack), and buyers (a 1–2% success fee on platform-originated deals, or a subscription). **Where the money is:** the equity spread on businesses the holdco buys at about 2.5–4x EBITDA. |
+| **Why now (2026)** | **The succession wave:** more than 500k businesses (22%) are owned by people aged 60+ [verified: SmartCompany], and about half of boomer owners intend to exit within 1–5 years [verified: MYOB Aug 2025, widely re-reported]. Only 16–24% have a plan [verified: VistaPrint/Pure Profile; IT Brief]. **Listings:** about 16,800 businesses are listed nationally, and enquiries rose 13% in Q2 2026 [verified: Bsale Q2 2026]. **Fees:** broker commission is 5–12% with $25k minimums [verified: Scalesuite; BusinessForSale]. **Opacity:** asking prices and SDE add-backs are unaudited. **AI:** LLMs plus accounting APIs make normalising books near-free *now*, which wasn't possible in 2022. **Debt gap:** private credit has grown (about 11% of business lending [unverified: RBA via 2025 guide]), but SME acquisition debt is still described as unavailable outside small working-capital loans [verified: SearchFunder forum, anecdotal]. That gap is an opening for an underwriting engine. |
+| **Unfair inputs** | **The best fit of the four with the earlier synthesis's pattern:** pricing and underwriting under uncertainty, data sold to capital, and capital allocation. **Direct reuse of the leading candidate:** rent rolls *are* SME sales, so the rent-roll engine becomes vertical #1 rather than a thin niche. That fixes round 3's "250–900 deals/yr" problem by widening to more than 10k deals a year. **Other inputs:** LAF two-sided marketplace experience; CFO credibility with sellers' accountants; ex-BCG and exit networks for co-investors and family offices; and his own record as a seller (Fulfilio to Australia Post), which builds trust with owners. **Weak spots:** no business-broking network; brokers may see the platform as a threat; and running acquired SMEs is operationally hard (mitigated by the co-invest model and hired operators). |
+| **Market & model** | **Transactions:** about 6–12k SME sales a year at an average of about $300–500k [estimate from about 16.8k listings, with average asking prices around $300k regionally]. **Fee pool:** the broker commission pool is about $250–400M a year [estimate]. **Platform revenue:** at maturity, about $5–10M in AU (packs plus success fees) [estimate]. **Holdco:** buy 2–3 businesses a year with $0.5–2M EBITDA. Owning 4–8 businesses by year 5 is about $6–10M EBITDA. A re-rating from 3x at entry to 6–8x at exit as a platform is the value-creation engine [estimate]. **Comparables:** in the US, Teamshares buys SMEs from retiring owners (raised >US$200M [unverified]) and Acquire.com runs a buy/sell marketplace; in AU, Bsale and SEEK Business are listings-only portals with no verification. |
+| **Capital & structure** | **Platform:** bootstrap, about $100–200k. **Holdco:** about $0.6–1.0M of founder equity plus about $5–15M from family offices and co-investors per year of deals, with senior or private-credit debt at about 40–50% of price and vendor finance. No personal guarantees: debt sits at deal SPV level against cash flow. **Founder ownership:** about 80% of the platform; in the holdco, about 10–15% co-invest plus 20% carry or a promote, with a management fee covering salary. |
+| **Outcome distribution (10 yrs)** | P(fail) 30% → $1.5M (the engine still pays as a side activity; capital partly recovered). P(modest) 35% → $3.0M. P(good) 25% → $7M. P(great) 10% → $25M (a compounding holdco or a scaled platform). **EV ≈ A$5.8M; median ≈ A$3.0M.** |
+| **Time to replace $500k** | **About 2–3 years.** Salary comes from the holdco management fee plus board fees from portfolio companies once about 3 businesses are owned. **While employed:** the engine and the first co-invest deal can be done while employed, subject to the outside-interests clause. |
+| **Job satisfaction** | **Very high.** It combines pricing models, deal-making, capital raising and board work, and each new vertical (pharmacy, accounting books, trades, rent rolls) is a new puzzle. This is close to "CFO + builder + investor". Day to day it is deal flow, not a contact centre. |
+| **Key risks** | **(1) Seller adverse selection.** Good businesses sell privately or through trusted accountants, and the platform sees the leftovers. Accountants are the right channel; portals aren't. **(2) Operating risk post-acquisition.** Small businesses depend heavily on key people, and the founder's capital is concentrated in about 3 early deals. Mitigation: co-invest alongside operators or searchers rather than run businesses himself. **(3) Broker hostility** cuts listing flow. Mitigation: sell the verification pack *to* brokers as a tool that sells their listings. **What kills it:** the engine's valuation band doesn't beat a broker's or accountant's judgement on outcomes, so there is no proprietary edge and the holdco is just another small-business buyer. |
+| **90-day test** | **Setup:** produce 25 Verified Exit packs, free or $500, for businesses listed on Bsale or SEEK in 2–3 verticals, plus 10 rent rolls. Also backtest the engine on 20 settled deals whose final prices brokers or accountants share. **Proceed if:** ≥5 brokers or accountants pay ≥$1.5k for a pack; the engine's band contains the final price in ≥70% of backtests and spots ≥3 overpriced listings that later fall in price; ≥2 family offices give soft commitments of ≥$1M; and 1 deal reaches term sheet. **Kill if:** fewer than 2 paid packs, *or* the backtest is no better than a 3x-SDE rule of thumb. |
+
+---
+
+## Idea C: "Volt Buyer's Agent": an electrification buying agent working from the household's own data
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | **What it is:** a fiduciary-style buying agent for whole-of-home electrification (battery, solar top-up, heat pump, EV charger, tariff, VPP). It pulls interval data from the smart meter via CDR or a NMI download, designs the system, runs a sealed-bid auction among vetted installers, checks the installation, and enrols the home in the best VPP. **Who pays:** installers (success fee of about 5–8% of job value), VPP operators and retailers (enrolment bounties), and green lenders (commission). |
+| **Why now (2026)** | **Volume:** more than 500k batteries were installed under Cheaper Home Batteries by Aug 2026, with about 8,800 accredited installers [verified: energy-storage.news; McKercher]. **Subsidy change:** tiers took effect on 1 May 2026 [verified]. **Quality:** the regulator increased battery inspections because of installation quality problems [verified: pv-magazine Mar 2026]. **Complexity:** households now face multi-asset, tariff and VPP decisions that a single quote can't resolve. **AI:** agents can now model interval data cheaply. |
+| **Unfair inputs** | **Strengths:** a statistician's ability to size systems from interval data and price the uncertainty; LAF success-fee mechanics; Fulfilio experience with a fragmented physical supply side. **Weak spots:** no energy network; and incumbents (SolarQuotes inside Origin, Solar Choice inside Flow Power) own SEO and installer panels. |
+| **Market & model** | **Volume:** about 250–300k battery installs a year at about $8–15k after subsidy [estimate], plus heat pumps and EV chargers. **Fee pool:** about $2–3B of jobs a year; at a 6% fee and 1% share, revenue is about $1.5–2M [estimate]. 5% share is about $8–10M. **Exit:** comparison sites are being bought by retailers (Origin/SolarQuotes, Flow Power/Solar Choice) [verified], which proves there is an exit, but also that the end state is a *retailer channel*. |
+| **Capital & structure** | Seed about A$1.5–2.5M. **Founder ownership:** about 70% after seed, 50% after A. A strategic exit to a retailer, OEM or VPP operator is the realistic outcome. |
+| **Outcome distribution (10 yrs)** | P(fail) 45% → $1.0M. P(modest) 35% → $2.2M. P(good) 15% → $5M. P(great) 5% → $15M. **EV ≈ A$2.7M; median ≈ A$2.2M.** This is **below the stay-employed bar.** |
+| **Time to replace $500k** | **About 3–4 years.** It can start while employed as a concierge. |
+| **Job satisfaction** | **The pull:** fun modelling, and energy-transition meaning. **The drain:** day to day it is installer quality management and consumer complaints, which is ops-heavy. |
+| **Key risks** | **(1) Subsidy cliff:** the program steps down, so volume could halve quickly. **(2) Retailer-owned channels** outbid on CAC and bundle free advice. **(3) Installer quality liability** when the platform "vouches" for jobs. **What kills it:** CAC is above about $400 per signed job against roughly $600 net fee. |
+| **90-day test** | **Setup:** run 60 Melbourne households through a concierge; $15k of ads plus partnerships with community energy groups. **Proceed if:** ≥20 signed jobs, average fee ≥$600, CAC ≤$350, and ≥15 installers accept the fee schedule. **Kill if:** fewer than 8 jobs signed. |
+
+---
+
+## Idea D (bold): "Proof": the verified-outcomes registry that AI agents query to choose local professionals
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | **What it is:** as consumers start asking ChatGPT, Gemini or Claude "who should sell my house, fix my roof or install my battery?", the SEO funnel that LAF, hipages and SolarQuotes depend on gets cut out. Proof builds the **machine-readable, verified outcomes layer** those assistants query through an MCP or API. Its first category is real-estate agents: sold price versus first estimate, days on market and discounting, from public sold data. Then conveyancers, builders and installers, using licence registers, CER inspection outcomes, VCAT and insurer claims data. **Who pays:** (1) professionals pay per qualified introduction routed by an AI agent through Proof's booking endpoint; (2) AI platforms and portals license the data; (3) lenders and insurers buy the risk scores. |
+| **Why now (2026)** | **The shift is real but uneven.** OpenAI scaled back in-chat Instant Checkout in March 2026 [verified: Skift; Hospitality.today]. Meanwhile ChatGPT added DoorDash and Uber [verified], and Google is testing agentic booking [verified: Near Media]. Discovery is moving to assistants faster than transactions are. **Supply-side AI is funded heavily:** Avoca (US$1B) and Probook [verified]. That suggests a gap on the *demand side*: there is no trusted, neutral outcomes registry that assistants can cite. |
+| **Unfair inputs** | **Strengths:** LAF knowledge of the agent-performance data model (the founder built the original ranking); data-science credibility; and timing awareness as a heavy AI-agent user. **Weak spots:** this is a two-sided chicken-and-egg problem *with AI platforms as a third side* that the founder can't influence. And LAF, RateMyAgent and Domain own the agent data. Licence-register scraping and terms-of-use risk. |
+| **Market & model** | **Speculative.** Australian lead-gen spend on local professionals is probably >A$1B a year across real estate, trades and finance [estimate]. If 10–20% of discovery shifts to assistants by 2030, the routing layer could earn $50–150M a year [estimate]. **Comparables:** none at scale. The closest are review platforms (RateMyAgent raised about $12M ahead of a planned float [verified: Urban.com.au]) and US home-services AI rounds. |
+| **Capital & structure** | Pre-seed about $0.5M from the founder, then VC seed of about A$3–4M on traction. **Founder ownership:** about 55–60% after A. |
+| **Outcome distribution (10 yrs)** | P(fail) 60% → $1.2M. P(modest) 20% → $2.5M. P(good) 13% → $8M. P(great) 7% → $30M. **EV ≈ A$4.4M; median ≈ A$1.2M.** This is the most skewed of the four. |
+| **Time to replace $500k** | **About 4–6 years**, through VC salary plus secondary sales. **While employed:** the registry and MCP can be built while employed (all software). |
+| **Job satisfaction** | **Very high novelty:** AI-native, product and data, and frontier strategy. **The drain:** high anxiety, because it depends on platform decisions he doesn't control. |
+| **Key risks** | **(1) AI platforms build or license their own data** (Google already has Maps reviews and Local Services Ads) and route to their ad products. **(2) Incumbents (Domain, REA, LAF) publish their own MCP endpoints first.** **(3) Monetisation lag:** agent-routed volume may stay small until about 2029. **What kills it:** no assistant routes meaningful volume through third-party registries by 2028. |
+| **90-day test** | **Setup:** build the Melbourne agent-outcomes registry (about 3,000 agents) as an open MCP server plus a public page for each agent. **Proceed if:** within 90 days the registry is cited or used by ≥1 major assistant surface (tracked referrals ≥500 a month); ≥30 agents claim profiles; ≥10 pay for qualified introductions at ≥$300 each. **Kill if:** referrals stay under 100 a month. |
+
+---
+
+## Cross-cutting observations
+
+1. **The pure LAF model is getting harder.** **Supply side:** where supply is tight (aged care at 93% occupancy, childcare), suppliers won't pay. **Demand side:** where demand is high-volume (solar, energy plans), retailers and portals buy the comparison sites. **Distribution:** AI assistants threaten SEO acquisition.
+2. **The comparison business that survives captures value at the asset,** as in B, or at a fiduciary decision with several fee pools, as in A. A pure lead fee survives in neither case.
+3. **Synergy with the leading candidate:** B absorbs the rent-roll pricing engine as one vertical and fixes its deal-volume ceiling. This is the strongest reason to rank it first.
+
+## Top pick and ranking
+
+**Top pick: B (ExitIQ).** It is the only idea whose edge (calibrated pricing of messy small-business cash flows) is captured as *equity in the assets*, not as report or lead fees. It turns the round-3 rent-roll engine from a 250–900-deal niche into a more than 10k-deal-a-year market riding the boomer succession wave. It can start while the founder is employed, and the holdco management fee can replace $500k within about 2–3 years. The decisive test is whether the engine beats a 3x-SDE rule of thumb on 20 settled deals.
+
+**Ranked:**
+
+| Rank | Idea | EV | Median | Note |
+|---|---|---|---|---|
+| 1 | **B: ExitIQ** (SME-sale verification and matching, with a holdco/co-invest) | ≈ A$5.8M | ≈ A$3.0M | |
+| 2 | **D: Proof** (verified-outcomes registry for AI agents) | ≈ A$4.4M | ≈ A$1.2M | Bold, high variance. Cheap to test while employed. |
+| 3 | **A: LaterLife** (aged-care, home-sale and RAD navigator) | ≈ A$4.1M | ≈ A$2.5M | Strong LAF transfer, but ops-heavy, and supply willingness to pay falls at high occupancy. |
+| 4 | **C: Volt Buyer's Agent** (electrification buying agent) | ≈ A$2.7M | ≈ A$2.2M | Below the stay-employed bar; the category is consolidating into retailers. |
+
+## Sources (from search summaries)
+- Bsale Q2 2026 business sales market report (bsale.com.au); Scalesuite and BusinessForSale broker-fee guides; SmartCompany, IT Brief/MYOB and Pure Profile on succession; SearchFunder forum posts on AU acquisition debt
+- GEN aged care data: admissions fact sheet 2024–25; Inside Ageing on Mirus occupancy; The Weekly Source on Support at Home waitlists and Mable; The Adviser on aged-care loans; La Trobe, Household Capital, Bridgit
+- energy-storage.news and pv-magazine on Cheaper Home Batteries; ESD News and RenewEconomy (Origin acquires SolarQuotes); MergerLinks (Flow Power / Solar Choice)
+- Skift and Hospitality.today on the OpenAI checkout retreat; Near Media on Google agentic booking; reports on the Avoca and Probook rounds
+- Mergr (LAF / Dott & Crossitt); Urban.com.au (RateMyAgent); PitchBook (iSelect / Compare the Market)
