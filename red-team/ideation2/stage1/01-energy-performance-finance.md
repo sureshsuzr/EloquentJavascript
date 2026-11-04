@@ -1,3 +1,118 @@
-# Stage 1 — Lens 01: Energy performance & savings-share finance
+# Stage 1, lens 01 (Track B): energy performance and savings-share finance
 
-Status: draft in progress (3 Nov 2026).
+Status: complete draft, 4 Nov 2026. Lens: C&I and public-sector energy-as-a-service, performance contracting and savings-share finance, where repayment comes from **measured** savings. 17 web searches; many primary pages were only reachable through search summaries, so check the labelled figures before relying on them.
+
+## The thesis in one paragraph
+
+Savings-share finance has always been a statistics business pretending to be an engineering business. The binding constraint isn't capital (the CEFC committed a record A$9.1B in FY26 **[verified: CEFC figure as reported in ess-news/pv-magazine search results, Aug 2026]**, and the banks run CEFC-backed green asset-finance programs) or kit (heat pumps, VSDs, batteries and controls are commodities). The constraint is **trust in the counterfactual**: how much energy the site *would* have used. Today that is settled by expensive engineers (IPMVP Option B/C reports, ~A$20–50k per site **[estimate]**), so ESCOs only serve hospitals, universities and big government buildings, and the Australian performance-contracting market is described as "underdeveloped" compared with other markets **[verified: Energy Efficiency Council EPC page, undated]**. If AI makes a defensible, regulator-grade baseline nearly free, three things open up at once: (1) metered certificate creation (VEU project-based activities, NSW ESS) for mid-size sites the deemed methods underpay; (2) savings-share contracts for the long tail of 0.5–5 GWh/yr sites; (3) savings that are bankable enough for cheap debt and, later, insurance. The founder (statistician, CFO, CS/AI, ex-Fulfilio warehouses) is unusually well placed to own that counterfactual.
+
+## Ideas generated (and why most were cut)
+
+| # | Idea | Verdict |
+|---|---|---|
+| a | **AI M&V + metered-certificate engine** (asset-light, savings-share on certificates and optimisation) | **Kept (#2)** |
+| b | **Cooling-as-a-Service for cold stores and warehouses** (own the refrigeration/solar/battery upgrade, paid from metered savings) | **Kept (#1)** |
+| c | **Heat-as-a-Service for Victorian food and beverage manufacturers** (gas-indexed heat tariff) | **Kept (#3)** |
+| d | **Safeguard abatement-for-units** (fund abatement at Safeguard facilities for a share of energy savings and SMCs) | **Kept (#4, bold)** |
+| e | Energy Savings Insurance MGA (IDB-style savings guarantee) | Folded into (a) as a later product; standalone needs insurer capacity, which earlier rounds flagged as a blocker |
+| f | Environmental Upgrade Agreement (EUA) lender | Cut: Sustainable Australia Fund already works with 35+ Victorian councils and has a A$200M+ facility **[verified: SAF/Fifth Estate, dated variably]**; thin margin, no edge |
+| g | Public-sector EPCs (hospitals, schools, councils) | Cut as a standalone: Victoria's Greener Government Buildings already ran 600 buildings and saved >A$240M over 14 years through incumbent ESCOs (e.g. Barwon Health EPC A$7.6M) **[verified: health.vic.gov.au, VHBA, page updated Mar 2026]**. Procurement is slow and favours Veolia/Schneider-class firms. Better as an M&V subcontract channel for (a) |
+| h | Rental minimum-standards EaaS for landlords (Vic, 1 Mar 2027) | Cut: residential, installer-driven, outside this lens; flagged for the residential lens |
+| i | Refrigeration demand-response aggregator | Folded into (b): it's a revenue line, not a company |
+| j | NABERS-uplift-as-a-service for office landlords | Cut: crowded (Buildings Alive, Conserve It, BGIS) and paid on fees, not outcomes |
+
+## Idea 1: ColdCore, Cooling-as-a-Service for cold stores and warehouses
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | Fund, own and operate refrigeration-plant upgrades (controls, VSDs, defrost and door management, evaporator/condenser retrofits, natural-refrigerant swaps), rooftop solar, batteries and thermal-mass demand flexibility at cold stores, food DCs and warehouses. The operator pays nothing upfront and pays a **price per kWh avoided** (or a fixed share, e.g. 70% of verified savings) for 7–12 years. Outcome priced: metered energy and demand-charge savings, verified monthly by AI baselines normalised for weather, throughput and room temperatures. |
+| **Why now (2026–28)** | Cooling can be up to ~80% of cold-chain power use **[verified: trade article claim, not Australia-specific]**; operators cite rising energy costs and labour as their top pressures. NABERS released v1.1 of its Warehouses and Cold Stores rules (Apr 2026) **[verified: nabers.gov.au]**, so landlords and 3PLs can now be benchmarked. C&I battery attach rates are rising and the SRES cap was reportedly raised from 100 kW to 1 MW **[unverified: vendor blog]**. VEU proposed co-payment and warranty rules for cold-room upgrades **[verified: energy.vic.gov.au search summary]**, so deemed certificates get harder and **metered** savings are worth more. Cheap CEFC-backed debt is available (Infradebt A$100M distribution-connected program, Aug 2026 **[verified: ess-news]**; ANZ/Westpac energy-efficient asset finance **[verified: CEFC releases, undated]**). |
+| **Why Australia / Melbourne** | Melbourne's west (Truganina, Laverton, Derrimut) is Australia's densest cold-chain cluster: NewCold has 405,000 pallet positions at Truganina alone **[verified: NewCold/trade press]**; Lineage runs ~501,000 positions nationally **[unverified: market report]**. Victoria has the VEU (the deepest state certificate market) and high summer peak prices. Handicap: none; this is local, physical and relationship-driven. |
+| **Unfair inputs** | Fulfilio gave the founder warehouse operators, 3PLs and landlords as a network and a vocabulary; the Australia Post link opens doors to parcel and cold-chain sites **[founder input; verify reach]**. Statistics and CS: he can build the baseline engine himself. CFO: structures the SPV, debt warehouse and contracts. **Gaps:** a refrigeration engineer co-founder (industrial ammonia/CO2 plant, ex-Kirby/Cold Logic/Buildcorp-type, ideally with VEU accredited-person experience) and, by year 2, a project-finance lead. |
+| **Market & model** | Australian refrigerated warehouse capacity ~10.2M m³ (2024) **[unverified: market report]**. Typical mid-size cold store: 2–4 GWh/yr, A$0.4–0.8M power bill **[estimate]**. Package: A$1.0–2.0M capex; 20–35% kWh saving plus solar and demand-charge cuts gives A$180–300k/yr; plus upfront metered VEECs (VEEC ~A$83 in Jul 2026, 2025 average A$89.25 **[verified: CORE Markets; ESC]**) worth ~A$100–300k per site **[estimate]**; plus ~A$20–50k/yr flexibility revenue (pre-cooling against price spikes) **[estimate]**. Unlevered project IRR ~12–16%, levered ~18–25% **[estimate]**. Platform: 40–60 sites by year 6, A$60–100M of assets, A$8–12M EBITDA (asset yield plus a 15–20% development margin) **[estimate]**. Comparables: **Redaptive** (US metered EaaS; US$100M equity round led by CPP Investments Oct 2024 and a US$650M credit facility from CDPQ and Nuveen, May 2025 **[verified: ESG Today; aggregator for the facility, primary release not read]**); **Agile Energy** (C&I solar and battery PPAs; CEFC Powering Australia Technology Fund with Five V Capital, 200 MW pipeline **[verified: CEFC]**). Exit: sale to an infrastructure fund or super fund at 1.2–1.5x NAV or 10–14x contracted EBITDA **[estimate]**. |
+| **Capital & structure** | Opco (platform, M&V IP, origination) plus an asset HoldCo/SPV. Seed A$1.5–3M (founder A$0.5M plus family offices) for the first 3–5 sites; then a A$15–30M equity line (family office or CEFC Powering Australia Technology Fund, which has backed this pattern) and 60–70% senior debt from a CEFC-backed lender. Founder: ~35–50% of opco after seed, 20–30% at exit, plus a promote on asset equity. Personal guarantee avoidable once there are 3 sites in the SPV. |
+| **Floor and failure mode** | Hard assets bolted to customer sites, plus contracted payments from creditworthy operators (Lineage/NewCold-class, 3PLs, supermarket DCs). Failure: savings under-delivered (model or operator behaviour), customer insolvency or exit (equipment is hard to repossess and redeploy), or slow origination that never reaches scale. Recoverable: portfolio sale of the operating sites at ~0.8–1.0x cost. **P(total loss of founder capital) ~12%**. |
+| **Outcome distribution (10 yrs)** | Founder equity value: total loss 12% (A$0); modest 40% (A$2M: 10–15 sites, sold as a portfolio); good 38% (A$10M: platform with A$60M+ assets); great 10% (A$35M: national cold-chain EaaS sold to infra/super). **EV ≈ A$8.1M**; median ≈ A$2–4M. Assuming ~A$1.5M cumulative salary drawn, **P(positive) ≈ 58%** (positive = equity + salary − capital > ~A$3.25M). |
+| **Cash generation** | Development margin and certificates make each site cash-positive in year 1. The platform is cash-positive in year 3 at ~15 sites; asset growth needs outside equity, but certificate cash (paid at creation) self-funds ~25–35% of each site's equity cheque **[estimate]**. |
+| **AI leverage** | High and rising. Baselines need multi-variable regression on weather, throughput, door openings and set-points; AI cuts M&V cost toward zero, spots non-routine events, writes the VEU/IPMVP report, and runs predictive control (pre-cooling against price signals). Better models = tighter baselines = smaller error bands = more certificates and cheaper debt. Data from every site improves underwriting of the next. |
+| **Job satisfaction** | Plants, pallets and P&Ls: site walks in Truganina, building models, structuring debt, selling to operations heads. Very like Fulfilio, with a balance sheet. |
+| **Key risks** | (1) Operators prefer to buy kit with cheap bank finance and keep the savings (off-balance-sheet appetite is the crux). (2) Under-delivered savings when operators change throughput or product mix (contract and baseline design must handle non-routine events). (3) VEEC price and rule risk (surplus >5M certificates into CY26 **[verified: CORE Markets Jan 2026]**). |
+| **90-day test** | While employed: 15 interviews with cold-store/3PL operations or finance heads via the Fulfilio network; get 12 months of interval data from 3 sites; model savings. **Proceed if** ≥3 sites show ≥20% modelled savings and ≥A$150k/yr, ≥1 operator signs a non-binding savings-share term sheet, ≥40% of interviewees prefer off-balance-sheet, and 1 CEFC-backed lender gives indicative terms (≤8.5%, ≥60% gearing). **Kill if** fewer than 30% want off-balance-sheet or modelled savings are below 15%. Cost: ~A$15k plus evenings. |
+
+## Idea 2: MeterProof, an AI M&V and metered-certificate engine (asset-light wedge)
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | Become (or partner with) a VEU Accredited Person and NSW ESS certificate provider for **measurement-and-verification (project-based) activities**: use AI baselines to create certificates from metered savings at C&I sites that the deemed methods under-reward, and sell "savings verification as a service" to ESCOs, financiers and installers. Paid as a share of certificates created (20–35%) plus a share of no-capex optimisation savings. Outcome priced: verified MWh and tCO2-e abated. Later: wrap a savings guarantee with an insurer (Energy Savings Insurance). |
+| **Why now (2026–28)** | VEU M&V Specifications v8.0 (from 20 Jun 2025) added five specified measurement methods, more options for non-routine events, more flexibility on missing or erroneous data, and NABERS-aligned timeframes **[verified: ESC, DEECA v8.0]**. That makes metered methods usable at scale for the first time. VEU is consulting on industrial-heat activities and tightened C&I heat-pump rules from 31 Mar 2026 **[verified: energy.vic.gov.au, 24 Mar 2026]**; tighter deemed rules push volume toward metered. The US shows the path: CalTRACK/OpenEEmeter open methods, and PG&E pays aggregators on meter-measured savings **[verified: Recurve docs, 2019–21 sources]**. |
+| **Why Australia / Melbourne** | Victoria and NSW run the world's most liquid white-certificate markets with metered pathways; Melbourne is home to the regulator (ESC) and the AI-M&V talent pool (Exergenics, University of Melbourne). |
+| **Unfair inputs** | This is the founder's statistics edge in its purest form: baseline modelling, uncertainty bands, error analysis. CS/AI to build it; CFO to run the certificate book. **Gap:** an M&V practitioner (CMVP-certified) who knows ESC audit practice; and initially a partnership with an existing Accredited Person to avoid 6–12 months of accreditation. |
+| **Market & model** | VEU surrendered >6.5M certificates for 2024 obligations **[verified: ESC]**: ~A$550M/yr at A$83. Metered pathways are a small share today **[unverified]**. A site saving 1 GWh/yr in Victoria at ~0.8–0.9 tCO2-e/MWh creates several thousand VEECs over the forward-creation period **[estimate; check v8.0 rules]**, i.e. A$150–400k per site; a 25% share gives A$40–100k per site with near-zero marginal cost. 60 sites/yr by year 3 gives A$3–5M revenue at 60–70% gross margin **[estimate]**. Software licence to ESCOs and lenders adds recurring revenue. Comparables: Recurve (US M&V platform), Exergenics (Melbourne AI chiller optimisation, 5–25% plant savings claimed **[verified: Siemens marketplace listing]**). |
+| **Capital & structure** | A$0.3–0.6M of founder money; optional A$1–2M seed. No balance sheet beyond holding certificates for weeks. Founder 60–80%. |
+| **Floor and failure mode** | A profitable niche consultancy plus a reusable baseline engine, even if it never scales. Failure: ESC audit rejects AI baselines, or certificate price collapses (surplus >5M into CY26). **P(total loss) ~15%**, but the loss is small (A$0.3–0.5M). |
+| **Outcome distribution (10 yrs)** | Total loss 15% (A$0); modest 50% (A$2.5M: profitable A$1–2M EBITDA services firm); good 28% (A$8M: national M&V/certificate platform, licensing to lenders); great 7% (A$30M: becomes the default "savings oracle" for Australian green finance, or acquired by a retailer/ESCO). **EV ≈ A$5.6M**; median ≈ A$2.5M; **P(positive) ≈ 55–60%** (higher if run partly while employed). |
+| **Cash generation** | Cash-positive in 12–18 months; self-funding thereafter. Certificates are paid within weeks of registration. |
+| **AI leverage** | Maximal: the product *is* the model. Time-series foundation models, automated non-routine-event detection and LLM-drafted M&V plans and reports cut cost per project by an order of magnitude. Improves directly with models. |
+| **Job satisfaction** | High for a statistician; less physical; more regulatory paperwork. Ceiling lower unless it feeds a balance-sheet business (Idea 1). |
+| **Key risks** | (1) Regulatory: ESC audit appetite for ML baselines, rule changes, scheme targets. (2) VEEC price (A$83 with a >5M surplus). (3) Low barriers: incumbent Accredited Persons copy it. |
+| **90-day test** | Get interval data for 5 C&I sites (retailer data with customer consent), build baselines to v8.0, and price certificates. Meet 2 Accredited Persons and the ESC's PBA team. **Proceed if** ≥3 sites show ≥A$100k certificate value each and 1 AP agrees to a revenue-share pilot. **Kill if** value per site is under A$40k or the ESC signals ML baselines won't pass audit. Fully doable while employed. |
+
+## Idea 3: HeatShift, Heat-as-a-Service for Victorian food and beverage manufacturers
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | Own and operate industrial heat pumps, electric boilers and thermal storage at food, dairy and beverage plants (processes below ~150–200°C **[verified: ARENA]**); sell **heat per GJ delivered** at a gas-indexed discount for 10–15 years. Outcome priced: GJ of heat delivered at spec and availability, with gas displaced. |
+| **Why now (2026–28)** | AEMO's 2026 GSOO: southern legacy gas production falls ~46% in five years, peak-day shortfall risk from 2029 and new supply needed from 2030 **[verified: AEMO]**. VEU is consulting on industrial heat activities (Mar 2026) **[verified]**. ARENA funds demonstrations (McCain Ballarat A$7.38M heat recovery; Hardwick Kyneton A$838k for a 1 MW heat pump; Blackmores Braeside heat pump, ~25% gas cut **[verified: trade press citing ARENA]**). Counter-signal: east-coast wholesale gas fell to ~A$10.61/GJ in Q1 2026 and A$9.22/GJ in March **[verified: AEMO data as reported]**, which weakens near-term economics. |
+| **Why Australia / Melbourne** | Victoria is the most gas-dependent state for industrial heat and faces the steepest supply decline; Melbourne's food-manufacturing belt is local. New commercial buildings go all-electric from 1 Jan 2027, though Class 8 industrial buildings and existing buildings are exempt **[verified: RenewEconomy/HVACR News]**, so this is a voluntary market, not a mandated one. |
+| **Unfair inputs** | CFO structuring of a heat tariff with gas indexation; statistics for heat-demand forecasting and performance guarantees. **Gaps:** an industrial process-heat engineer co-founder; OEM partnerships (Mayekawa, GEA and others). |
+| **Market & model** | Victorian manufacturing gas use is in the tens of PJ/yr **[unverified]**. A 1–3 MW heat pump project costs A$2–8M **[estimate]**; economics depend on electricity at A$0.10–0.15/kWh with COP 3–4 versus delivered gas ~A$14–20/GJ **[estimate]**. Grants plus certificates make it work; without them it is marginal at today's gas price. |
+| **Capital & structure** | Larger tickets: A$5–15M project equity from infrastructure funds or the CEFC; founder ~25–40% of opco. |
+| **Floor and failure mode** | Hard assets, but specialised and hard to redeploy; under-performance risk on process integration. **P(total loss) ~25%**. |
+| **Outcome distribution (10 yrs)** | Total loss 25%; modest 35% (A$2M); good 30% (A$12M); great 10% (A$45M, if gas tightens after 2029). **EV ≈ A$8.8M**; median ≈ A$2M; **P(positive) ≈ 47%**. |
+| **Cash generation** | Slow: 12–24 month project cycles; cash-positive in years 3–4; needs outside capital throughout. |
+| **AI leverage** | Medium: heat-demand forecasting, thermal-storage dispatch against electricity prices, performance guarantee pricing. |
+| **Job satisfaction** | Industrial engineering-heavy; long sales cycles; big wins when they land. |
+| **Key risks** | (1) Cheap gas in 2026–28 delays demand. (2) Process-integration failures that damage the customer's production. (3) Grid-connection upgrades (cost and delay). |
+| **90-day test** | 10 Victorian food/bev plants using >10 TJ/yr; get OEM quotes; model levelised cost of heat. **Proceed if** ≥2 LOIs at a ≥10% discount to gas-equivalent with modelled IRR ≥12%. **Kill if** LCOH exceeds gas at A$14/GJ without grants. Partly doable while employed. |
+
+## Idea 4 (bold): SafeguardShare, abatement funded for a share of savings and SMCs
+
+| Field | Assessment |
+|---|---|
+| **One-liner** | Fund, build and verify efficiency and electrification projects at mid-sized Safeguard facilities (around the 100 kt CO2-e threshold: food processors, cement and lime, smaller mines and mine services, waste) in exchange for a share of the energy savings **and** of the Safeguard Mechanism Credits (SMCs) the facility earns by beating its declining baseline. Outcome priced: verified tCO2-e below baseline plus GJ/MWh saved. |
+| **Why now (2026–28)** | Baselines decline ~4.9%/yr to 2030 **[unverified this session; per 2023 reforms]**; the 2026 Safeguard review is under way **[verified: Carbon Pulse, Sep 2026]**; SMCs are now trading in the secondary market **[verified: Carbon Pulse, early 2026]**; the cost-containment price was A$79.20 in 2024–25 **[verified: CER]**; the Powering the Regions Fund Safeguard Transformation Stream has ~A$321M available from 2025–26 **[verified: ministerial release, 5 Feb 2026]**. Facilities need abatement but don't want to fund it on their balance sheet. |
+| **Why Australia / Melbourne** | A uniquely Australian instrument: a baseline-and-credit scheme with a tradeable output, so abatement has a second revenue line. Facilities are national and regional; Melbourne is fine for HQ but not an advantage. |
+| **Unfair inputs** | Statistics (emissions baselines, attribution of savings vs production changes); CFO credibility with heavy-industry CFOs; AI M&V shared with Ideas 1–2. **Gaps:** a heavy-industry process engineer; carbon-market and legal expertise on SMC entitlement. |
+| **Market & model** | ~200+ Safeguard facilities **[unverified count]**. Project tickets A$5–30M; returns from energy savings plus SMCs (price uncertain: ACCU spot averaged ~A$35 in 2024, A$41.73 by Nov 2024 **[verified: CER]**; 2026 levels not confirmed). |
+| **Capital & structure** | Fund-like: A$50–150M of infrastructure/super capital with a GP stake for the founder (management fee + carry). Founder owns 30–50% of the GP. |
+| **Floor and failure mode** | Contracts with large corporates, hard assets; but policy risk is high (review outcome, SMC price) and sales cycles are long. **P(total loss) ~35%**. |
+| **Outcome distribution (10 yrs)** | Total loss 35%; modest 30% (A$1.5M); good 27% (A$15M); great 8% (A$60M GP and carry). **EV ≈ A$9.3M** (highest); median ≈ A$1.5M; **P(positive) ≈ 38%**. |
+| **Cash generation** | Year 3+ at best; fee income only once a fund closes. |
+| **AI leverage** | High on measurement (separating abatement from production changes), medium elsewhere. |
+| **Job satisfaction** | High-stakes, big-ticket, policy-heavy; long cycles. |
+| **Key risks** | (1) Safeguard review changes baselines or SMC rules. (2) Facilities prefer to self-fund or buy ACCUs if prices stay low. (3) Fundraising a first-time fund without a track record. |
+| **90-day test** | Map facilities with modest headroom from CER data; 10 conversations with facility CFOs/sustainability heads; legal opinion on contractual SMC sharing. **Proceed if** ≥2 facilities will negotiate a term sheet and 1 infra investor expresses interest. **Kill if** none will share SMCs. Doable while employed, at the level of conversations. |
+
+## Comparison
+
+| Idea | EV (founder equity, A$) | Median | P(total loss) | P(positive) | Cash-positive | Starts while employed? |
+|---|---|---|---|---|---|---|
+| 1 ColdCore | ~8.1M | 2–4M | 12% | **~58%** | Site yr 1; platform yr 3 | Yes (test) |
+| 2 MeterProof | ~5.6M | ~2.5M | 15% (small loss) | ~55–60% | Yr 1–2 | **Yes (fully)** |
+| 3 HeatShift | ~8.8M | ~2M | 25% | ~47% | Yr 3–4 | Partly |
+| 4 SafeguardShare | ~9.3M | ~1.5M | 35% | ~38% | Yr 3+ | Conversations only |
+
+All distributions are **[estimate]**. "Positive" assumes ~A$1.5M cumulative salary drawn over 10 years, set against the ~A$3.0–3.5M staying benchmark.
+
+## Top pick and ranking
+
+**Top pick: ColdCore (cold-chain Cooling-as-a-Service), entered through MeterProof's AI M&V engine.** Run the M&V and certificate engine first, while employed, on Fulfilio-network cold stores. It earns cash from certificates, proves the AI baselines pass ESC audit, and builds the data that underwrites ColdCore's savings-share contracts. Quit when there are ≥3 signed sites and a CEFC-backed debt term sheet. This gives the founder's best edge (pricing the counterfactual) a floor of hard assets with contracted payments, and the upside of an infrastructure-style exit.
+
+Ranked:
+1. **ColdCore**: best balance of floor, cash and upside; uses Fulfilio directly.
+2. **MeterProof**: highest-probability, cheapest test; the wedge for #1 and #4.
+3. **HeatShift**: strong Victorian thesis but timing risk from cheap 2026 gas; revisit in 2028 as a ColdCore product line.
+4. **SafeguardShare** (bold): highest EV, lowest P(positive); an option to exercise once the M&V engine and a track record exist and the Safeguard review has settled.
+
+## Sources
+See the inline **[verified: …]** labels; main sources were AEMO (2026 GSOO), ESC and DEECA (VEU), CORE Markets, CER, CEFC, NABERS, ARENA and trade press (2024–26).
