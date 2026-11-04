@@ -1,0 +1,109 @@
+====================================================================================================
+ROUND-2 WEALTH MODEL  (A$M, 10-yr wealth created, after tax, 4%/yr compounding)
+B0 Stay employed: EV 4.77  median 4.56  P10 4.07  P90 6.21
+
+Enacted CGT regime (indexation + 30% min tax from 1 Jul 2027) is the headline;
+dEVold / P>s old = same model under the CURRENT 50%-discount regime.
+ID       EV   Med   P10    P90    dEV P>stay  P(TL)  Pkill   dP10 gap1-5 EqMed|ok  dEVold P>s old  EV@p1  stage-1 EV / cash-positive
+B1     5.07  4.34  2.30   8.42  +0.30    31%    17%    25%  -1.77   0.40     3.99   +0.94     37%   6.14  +0.46 dEV (r1) / yr 2-3 (levered)
+S1     5.25  3.82  2.44   9.59  +0.48    27%    18%    14%  -1.63   1.24     3.56   +1.48     32%   6.31  11.8 (11) / 3.3 (14) / m15-24
+S2a    4.34  3.29  2.30   7.47  -0.43    22%    15%    12%  -1.77   1.28     2.74   +0.27     27%   5.16  5.2-8.7 / m15-20
+S2b    4.67  3.82  2.41   8.01  -0.10    29%    15%    12%  -1.66   1.28     3.85   +0.69     35%   6.11  8.3 (03) / m18-26
+S2c    4.64  3.75  2.31   8.09  -0.13    28%    15%    12%  -1.76   1.28     3.70   +0.67     34%   5.51  8.8 (13C) / m15-20 (fund: yr 4+)
+S3     4.54  2.98  2.07   8.63  -0.23    22%    20%    13%  -1.99   1.26     2.59   +0.58     25%   6.03  6.2-8.8 / m12-18
+S4     4.49  3.32  2.14   8.00  -0.28    23%    21%    11%  -1.93   1.36     3.30   +0.51     28%   5.57  4.5-7.8 / yr 2-3
+S5     4.16  2.89  1.88   7.40  -0.61    20%    18%    14%  -2.19   1.20     2.61   +0.07     24%   4.93  5.6-8.1 / m12-18 (MeterProof)
+S6     4.65  3.76  2.53   7.61  -0.12    24%    20%    16%  -1.54   1.13     3.16   +0.58     29%   4.92  6.2-7.0 / yr 1-2 (PassMark)
+S7     3.83  3.18  2.00   6.18  -0.94    16%     0%    21%  -2.07   1.09     2.21   -0.55     20%   4.35  5.2 / asset-level day 1; G&A yr 2-3
+S8     4.48  3.14  2.26   7.74  -0.29    22%    25%    17%  -1.80   1.11     2.66   +0.29     25%   5.33  6.3 / first deal (liability-backed)
+S1h    5.36  4.08  2.75   9.18  +0.59    28%     9%    22%  -1.32   0.87     3.20   +1.48     33%   6.26  (variant) / m15-24
+S2bh   4.88  4.10  2.74   7.89  +0.11    30%     8%    19%  -1.33   0.91     3.59   +0.84     36%   6.14  (variant) / m18-26
+
+Break-even P(fail) (dEV = 0) vs the value used:
+  B1 0.55 (0.42) | S1 0.51 (0.32) | S2a none (0.27) | S2b 0.21 (0.27) | S2c 0.19 (0.27) | S3 0.21 (0.33) | S4 0.20 (0.33) | S5 none (0.32) | S6 0.29 (0.36) | S7 none (0.38) | S8 0.27 (0.42) | S1h 0.61 (0.32) | S2bh 0.36 (0.27)
+
+Tornado (change in dEV, A$M) for the modeller's top 3 shortlist candidates + S2c: ['S1', 'S2b', 'B1', 'S2c']
+  S1 base dEV +0.48, P>stay 27%
+     equity tax 47%/23.5%                             -0.19 / +0.97
+     exit values x0.75/x1.25                          -0.75 / +0.75
+     1-yr slip / none                                 -0.57 / +0.00
+     employer equity x2/x0.5                          -0.48 / +0.24
+     great value x0.5/x1.5                            -0.41 / +0.41
+     good value x0.7/x1.3                             -0.40 / +0.40
+     P(fail) +10/-10 pts                              -0.25 / +0.27
+     venture salary x0.8/x1.2                         -0.20 / +0.20
+     low salary: A$100k/yr reinvested @0%/@20% ROIC   -0.09 / +0.10
+  S2b base dEV -0.10, P>stay 29%
+     equity tax 47%/23.5%                             -0.14 / +0.82
+     employer equity x2/x0.5                          -0.50 / +0.25
+     exit values x0.75/x1.25                          -0.47 / +0.47
+     1-yr slip / none                                 -0.46 / +0.00
+     good value x0.7/x1.3                             -0.27 / +0.27
+     venture salary x0.8/x1.2                         -0.22 / +0.21
+     great value x0.5/x1.5                            -0.19 / +0.19
+     P(fail) +10/-10 pts                              -0.16 / +0.17
+     low salary: A$100k/yr reinvested @0%/@20% ROIC   -0.09 / +0.11
+  B1 base dEV +0.30, P>stay 31%
+     equity tax 47%/23.5%                             -0.07 / +0.64
+     exit values x0.75/x1.25                          -0.50 / +0.50
+     employer equity x2/x0.5                          -0.36 / +0.18
+     1-yr slip / none                                 -0.30 / +0.00
+     good value x0.7/x1.3                             -0.28 / +0.28
+     venture salary x0.8/x1.2                         -0.28 / +0.28
+     P(fail) +10/-10 pts                              -0.24 / +0.23
+     great value x0.5/x1.5                            -0.23 / +0.23
+     low salary: A$100k/yr reinvested @0%/@20% ROIC   -0.09 / +0.11
+  S2c base dEV -0.13, P>stay 28%
+     equity tax 47%/23.5%                             -0.15 / +0.80
+     exit values x0.75/x1.25                          -0.54 / +0.54
+     1-yr slip / none                                 -0.50 / +0.00
+     employer equity x2/x0.5                          -0.50 / +0.25
+     good value x0.7/x1.3                             -0.31 / +0.31
+     great value x0.5/x1.5                            -0.22 / +0.22
+     venture salary x0.8/x1.2                         -0.22 / +0.21
+     P(fail) +10/-10 pts                              -0.16 / +0.16
+     low salary: A$100k/yr reinvested @0%/@20% ROIC   -0.10 / +0.10
+
+P(positive) under tax/exit sensitivities (top candidates):
+  S1: base 27% | tax 23.5% 31% | exits x0.75 22% | P(fail)+10pts 23%
+  S2b: base 29% | tax 23.5% 35% | exits x0.75 23% | P(fail)+10pts 25%
+  B1: base 31% | tax 23.5% 37% | exits x0.75 25% | P(fail)+10pts 26%
+  S2c: base 28% | tax 23.5% 34% | exits x0.75 22% | P(fail)+10pts 24%
+
+S1 dispute: report 11 (EV ~A$11.8M, P+ 59%) vs report 14 (EV ~A$3.3M, P+ 25%)
+   11 as published: pre-tax founder EQUITY, salary excluded                 equity EV 11.83
+   (1) base rates -> .32/.43/.20/.05 (great 5%)                             equity EV  7.95
+   (2) values: 1.0x-rev modest, 7-8x EBITDA good, raise dilution great      equity EV  5.60
+   (3) enacted CGT (35/45/46%)                                              equity EV  3.18
+   (4) full model, incl. low salary, capital, forgone A$500k + employer equity: dEV +0.48, P>stay 27%, wealth EV 5.25 vs stay 4.77
+   (5) 14's generic-SME version (values x0.5-0.7: SME ACVs, Xero/MYOB bundling): dEV -0.43, P>stay 22%
+   (6) 11's own inputs through this model (salary, tax, forgone pay): dEV +3.30, P>stay 42%
+
+Salary path: dEV and P>stay with founder salary capped at A$150k (cut reinvested)
+   S1 ROIC 0%: dEV +0.36  P>stay 26%  P10 2.33
+   S1 ROIC 15%: dEV +0.51  P>stay 28%  P10 2.37
+   S1 ROIC 30%: dEV +0.74  P>stay 31%  P10 2.42
+   S2b ROIC 0%: dEV -0.22  P>stay 27%  P10 2.29
+   S2b ROIC 15%: dEV -0.07  P>stay 29%  P10 2.34
+   S2b ROIC 30%: dEV +0.18  P>stay 32%  P10 2.40
+   B1 ROIC 0%: dEV +0.08  P>stay 28%  P10 2.26
+   B1 ROIC 15%: dEV +0.38  P>stay 32%  P10 2.28
+   B1 ROIC 30%: dEV +0.90  P>stay 40%  P10 2.29
+   S2c ROIC 0%: dEV -0.26  P>stay 26%  P10 2.17
+   S2c ROIC 15%: dEV -0.11  P>stay 28%  P10 2.23
+   S2c ROIC 30%: dEV +0.14  P>stay 31%  P10 2.31
+
+Bucket probabilities used (fail incl. killed-while-employed / modest / good / great):
+   B1   0.42 / 0.33 / 0.19 / 0.06   (Staged distribution holdco (round-1 C4s))
+   S1   0.32 / 0.43 / 0.20 / 0.05   (Closewise (scaleups + foreign subs))
+   S2a  0.27 / 0.47 / 0.21 / 0.05   (S2a Resources Finance Office: service only)
+   S2b  0.27 / 0.47 / 0.21 / 0.05   (S2b ... + royalties for fees)
+   S2c  0.27 / 0.47 / 0.21 / 0.05   (S2c ... + Runway Capital)
+   S3   0.33 / 0.42 / 0.20 / 0.05   (Contractor Cash Desk / Cashline)
+   S4   0.33 / 0.42 / 0.20 / 0.05   (SPV Office)
+   S5   0.32 / 0.42 / 0.21 / 0.05   (ColdCore + MeterProof)
+   S6   0.36 / 0.40 / 0.19 / 0.05   (PassMark -> VoltCover 2.0)
+   S7   0.38 / 0.34 / 0.23 / 0.05   (Long Tail Royalties)
+   S8   0.42 / 0.30 / 0.22 / 0.06   (Closure Co)
+   S1h  0.32 / 0.43 / 0.20 / 0.05   (S1 hybrid: quit at A$1M ARR (yr 1.5))
+   S2bh 0.27 / 0.47 / 0.21 / 0.05   (S2b hybrid: quit at A$1M ARR (yr 1.5))
