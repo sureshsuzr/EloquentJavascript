@@ -7,47 +7,29 @@ Ideation agent: AI-Native Outcome-Priced Finance Function (core product and mark
 
 ## 0. What the market looks like (Nov 2026)
 
-**Software is crowded and well funded; the work itself is not yet being sold on outcomes in Australia.**
+**Software is crowded and well funded; the work itself is not yet sold on outcomes in Australia.**
 
-| Player | What it tells us | Source |
-|---|---|---|
-| **Bench** (US/Canada SMB bookkeeping, >US$100M raised) | Shut down without notice on 27 Dec 2024; bought by Employer.com on 30 Dec and restarted. No official reason given. Reported causes: a cash crunch, negative unit economics on low-priced (~US$250/month) human-heavy bookkeeping, falling service quality after layoffs, and a proprietary platform that held customers' books hostage when it closed. | [verified: TechCrunch via Techcouver, NCFA, Wikipedia]; causes [unverified: secondary analysis] |
-| **Pilot** (US) | ~US$27M revenue (2024, third-party estimate). Launched an "AI Accountant" in Feb 2026 and a US$99/month AI-only tier. CFO services ~US$1,750–5,250/month. | [unverified: aggregators, G2, PricingSaaS] |
-| **Digits** | Introduced **outcome-based pricing** for accounting firms in Apr 2026 (billing tied to delivered accounting outcomes rather than seats); business owners still pay a subscription. | [verified: Accounting Today, Apr 2026] |
-| **Basis** | Agents sold to accounting firms. US$100M Series B at US$1.15B (Feb 2026). | [verified: Bloomberg, BusinessWire] |
-| **Rillet** | AI-native ERP. US$70M Series B (2025); a reported US$100M Series C at ~US$1B (Aug 2026). | Series C [unverified: single tracker] |
-| **Campfire, Numeric** | AI ERP / close tools, US$50–65M Series B rounds (2025). | [verified in round 1: Fintech Global, CPA Practice Advisor] |
-| **Accrual, Crete** | US AI-native accounting roll-ups (Accrual bought Puzzle's firm business). | [verified in round 1] |
-| **Multiplier** (Singapore/NZ) | US$35M Series B (Aug 2026, Ribbit, Lightspeed). 10 acquisitions, including Oxygen Advisors (NZ, startups in NZ and AU) and Greenhawk (NZ). No Australian acquisition found. | [verified: BusinessWire, IT Brief, ChannelLife] |
-| **Xero JAX** | Moving to an agentic "financial superagent" (bank recs, AR/AP, a month-end agent in XeroForce). Accountants report early failures on basic tasks. | [verified: Accounting Today, Public Accountant] |
-| **Intuit** | Launched an "AI-native Accountant Suite" in Australia (2026). | [verified: headline only; CFOtech blocked from this session] |
-| **AU outsourced finance** (Scale Suite, Standard Ledger, mid-tier firms) | A full outsourced department from ~A$1,500/month; most clients A$2,500–6,000/month; mid-tier A$5–15k+/month; fractional CFO A$2.5–15k/month. All priced by scope or hours. | [verified as vendor-published: Scale Suite, Standard Ledger] |
-| **Offshore BPO** (TOA Global, ConnectOS) | TOA claims >4,180 staff in the Philippines; ConnectOS (Melbourne) expects ~A$100M revenue with >2,500 staff. An offshore finance seat costs ~A$2,500–4,500/month all-in. | [verified: AFR via Outsource Accelerator; TOA is self-reported] |
-
-**Five conclusions.**
-
-1. **No one in Australia sells the finance function on outcomes.** Local providers sell scope or hours. Digits sells outcome pricing *to firms*, not to companies. The positioning is open [unverified: absence of evidence from 4 searches].
-2. **Bench is the anti-pattern.** It was cheap, served tiny SMBs, had human-heavy delivery, ran on a proprietary ledger, and was funded for growth at negative gross margin. Every design choice below inverts one of those.
-3. **The AI layer is a commodity input, not a moat.** Xero, Intuit, Basis, Rillet and Digits will keep improving the agents. The defensible asset is **the outcome contract**: the measurement, the guarantee and the balance sheet (or insurance) behind it, plus the trust relationship with the CFO or board. This lens gets *stronger* as models improve, because delivery cost falls while the price is anchored to the value of the outcome.
-4. **The buyer is already spending A$300–600k a year on this.** A A$20M-revenue company typically carries a financial controller, an accountant, an AP/AR officer, part of a payroll role, a BAS/tax agent and fractional CFO time: ~A$350–500k loaded [estimate]. Offshore BPO cuts the labour cost but not the management load or the risk of error.
-5. **Market size.** ~2.73M actively trading businesses in Australia (Jun 2025); ~8.5% (~230k) turn over ≥A$2M, and that band is growing ~4% a year [verified: ABS Counts of Australian Businesses 2021–25]. Perhaps 60–90k are in A$2–100M with a real finance function to outsource [estimate]. Other relevant segments: ~9,900 majority foreign-owned operating businesses [verified: ABS for DFAT/Austrade, 2014–15; old], 1,712 foreign-owned entities with ≥A$100M income [verified: ATO tax transparency, year unclear], and ~745 ASX-listed mining juniors [verified: Mining Journal, 2025].
-
-### Regulatory tailwinds that make outcomes measurable and errors expensive
-- **Payday super, live 1 Jul 2026:** super is due within 7 business days of each pay run; the small business clearing house has closed [verified in round 1: ATO]. Every pay run becomes a compliance event with a clear pass/fail.
-- **Criminal wage underpayment offence (from 1 Jan 2025)** [unverified in this session]: payroll accuracy becomes a board-level risk, so a guarantee on it is worth paying for.
-- **AASB S2 climate reporting:** Group 2 from 1 Jul 2026, Group 3 from 1 Jul 2027 [verified in round 1: AUASB, CA ANZ].
-- **Critical Minerals Production Tax Incentive:** law since Feb 2025. A refundable offset of 10% of eligible processing costs for 31 critical minerals, for income years 2027–28 to 2039–40, with DISR registration [verified: ATO, PwC, Grant Thornton]. This is new, claimable money that needs specialist finance work (relevant to idea 3).
-
-### Ideas generated and discarded
-| Idea | Why cut |
+| Player | What it tells us |
 |---|---|
-| Cheap AI bookkeeping for micro-SMBs (<A$2M) | This is Bench. Low price, high churn, and Xero JAX / Intuit give it away free |
-| Generic AI accounting-firm roll-up | Banned by the brief; Multiplier, Kelly Partners and Count are already doing it |
-| AI-only software for the CFO's office | Rillet, Campfire, Basis and Numeric have US$50–100M rounds |
-| A pure collections agency at 15–30% contingency | A crowded, low-status, regulated (ASIC RG 96) consumer-debt business; B2B is better as a module |
-| Offshore BPO with an AI wrapper | A labour-arbitrage game won by TOA/ConnectOS scale; AI erodes it |
-| Outcome-priced R&D tax claims | Real but small, and ATO scrutiny makes contingency fees reputationally risky; keep as a module |
-| A finance function for NFPs and charities | Low willingness to pay; procurement-driven |
+| **Bench** (>US$100M raised) | Shut down without notice on 27 Dec 2024; bought by Employer.com on 30 Dec [verified: TechCrunch via Techcouver, NCFA]. No official reason. Reported causes: a cash crunch, negative unit economics on ~US$250/month human-heavy bookkeeping, service decline after layoffs, and a proprietary platform that trapped customers' books [unverified: secondary analysis]. |
+| **Pilot** (US) | ~US$27M revenue (2024); "AI Accountant" launched Feb 2026; US$99/month AI-only tier [unverified: aggregators]. |
+| **Digits** | Outcome-based pricing for accounting *firms* from Apr 2026; business owners still pay a subscription [verified: Accounting Today]. |
+| **Basis / Rillet / Campfire / Numeric** | Basis US$100M at US$1.15B (Feb 2026) [verified: Bloomberg]; Rillet ~US$1B Series C (Aug 2026) [unverified]; Campfire and Numeric US$50–65M rounds [verified in round 1]. |
+| **Multiplier** | US$35M Series B (Aug 2026); 10 acquisitions incl. Oxygen Advisors and Greenhawk (NZ, serving AU startups); no AU acquisition found [verified: BusinessWire, IT Brief]. |
+| **Xero JAX, Intuit** | JAX is becoming an agentic "superagent" (bank recs, AR/AP, month-end agent); accountants report early failures [verified: Accounting Today, Public Accountant]. Intuit launched an AI-native Accountant Suite in AU [verified: headline only]. |
+| **AU outsourced finance** | Full department from ~A$1,500/month, most clients A$2,500–6,000; mid-tier A$5–15k+; fractional CFO A$2.5–15k. All priced by scope or hours [verified as vendor-published: Scale Suite, Standard Ledger]. |
+| **Offshore BPO** | ConnectOS (Melbourne) ~A$100M revenue, >2,500 staff [verified: AFR via Outsource Accelerator]; TOA >4,180 staff [self-reported]. An offshore finance seat costs ~A$2,500–4,500/month. |
+
+**Conclusions.**
+1. **No one in Australia sells the finance function to companies on outcomes** [unverified: absence of evidence from 4 searches].
+2. **Bench is the anti-pattern:** cheap, micro-SMB, human-heavy, proprietary ledger, growth at negative gross margin. Each design choice below inverts one of those.
+3. **AI is a commodity input; the moat is the outcome contract:** the measurement, the guarantee and the insurance behind it, and the CFO/board trust. This gets *stronger* as models improve, because cost falls while price is anchored to outcome value.
+4. **The buyer already spends ~A$350–500k a year.** A A$20M-revenue company carries a controller, an accountant, an AP/AR officer, part of payroll, a BAS/tax agent and fractional CFO time [estimate].
+5. **Market:** 2.73M trading businesses; ~8.5% (~230k) turn over ≥A$2M, growing ~4% a year [verified: ABS Counts of Australian Businesses 2021–25]. Perhaps 60–90k in A$2–100M have a finance function worth outsourcing [estimate]. ~9,900 majority foreign-owned operating businesses [verified: ABS for DFAT, 2014–15; old]; ~745 ASX mining juniors [verified: Mining Journal, 2025].
+
+**Tailwinds that make outcomes measurable and errors expensive:** payday super from 1 Jul 2026 (super within 7 business days of each pay run) [verified in round 1: ATO]; criminal wage underpayment offence from 1 Jan 2025 [unverified]; AASB S2 Group 3 from 1 Jul 2027 [verified in round 1]; Critical Minerals Production Tax Incentive, a refundable 10% offset on eligible processing costs for 2027–28 to 2039–40 [verified: ATO, PwC].
+
+**Discarded:** cheap AI bookkeeping for micro-SMBs (this is Bench; Xero/Intuit give it away); generic accounting roll-up (banned; Multiplier, Kelly Partners, Count); CFO-office software (US$50–100M rivals); a standalone collections agency (low-status, regulated; better as a module); offshore BPO with an AI wrapper (scale game AI erodes); outcome-priced R&D tax claims (small, ATO scrutiny; keep as a module).
 
 ---
 
@@ -97,7 +79,7 @@ The gross-margin path depends on the ratio of human reviewers to clients moving 
 | **Market & model** | **TAM:** ~3–5k VC-backed AU/NZ companies above A$2M revenue [estimate] plus several thousand mid-sized foreign subsidiaries [estimate from ABS ~9,900 foreign-owned businesses, 2014–15] → ~6–9k targets × A$120k ≈ **A$0.7–1.1B ANZ** [estimate]. **Plan:** 25 clients (year 2, A$3.5M revenue), 80 (year 4, A$12M), 180 (year 7, A$28M) [estimate]. Gross margin 45% → 70%; EBITDA 20–30% at scale. **Comparables:** Pilot (US, US$1.2B valuation in 2021 [unverified]); Scale Suite and Standard Ledger (AU, input-priced); Multiplier (roll-up). Exit value: tech-enabled services at ~2–4x revenue, or 10–14x EBITDA [estimate]. |
 | **Capital & structure** | Bootstrap A$300–500k of founder capital to 10 clients; then optionally a A$3–5M seed from an AU VC or a services-focused fund to accelerate hiring and agent build. Founder ~55–70% after seed; the tax-agent co-founder 10–20% [estimate]. **No acquisitions needed**, though a later bolt-on of a scaleup-focused boutique (A$1–3M fees, ~1x fees) is an option. PI insurance A$20–50k/year [estimate]. |
 | **Floor and failure mode** | Failure: churn after outcome misses, or margin stuck at ~35% because agents don't remove enough human hours. **What's left:** a book of recurring contracts saleable to a mid-tier firm or Multiplier at ~0.8–1.2x revenue [estimate from DMY fee multiples, round 1]. With a A$2–4M book that recovers A$1.5–4M. **P(total loss) ~15–20%.** |
-| **Outcome distribution (10 yrs)** | Founder equity at year 10, pre-tax. Assumes a modest salary of A$150–200k from year 2 (≈A$1.0–1.2M after tax over 10 yrs), so equity must be ≥~A$2.2M to beat staying. **Total loss 18%:** A$0.2M. **Modest 45%:** A$4–8M revenue boutique sold at 1–1.5x → A$1.5–5M (midpoint A$3M; about half clear the bar). **Good 28%:** A$20–30M revenue, 2.5x → A$15–22M (A$18M). **Great 9%:** ANZ+UK platform, A$60M+ revenue → A$60M. **EV ≈ A$11M** (0.04 + 1.35 + 5.0 + 5.4). **Median ≈ A$3M. P(positive) ≈ 58%.** |
+| **Outcome distribution (10 yrs)** | Founder equity at year 10, pre-tax. Assumes a modest salary of A$150–200k from year 2 (≈A$1.0–1.2M after tax over 10 yrs), so equity must be ≥~A$2.2M to beat staying. **Total loss 18%:** A$0.2M. **Modest 45%:** A$4–8M revenue boutique sold at 1–1.5x → A$1.5–5M (midpoint A$3M; about half clear the bar). **Good 28%:** A$20–30M revenue, 2.5x → A$15–22M (A$18M). **Great 9%:** ANZ+UK platform, A$60M+ revenue → A$60M. **EV ≈ A$11.8M** (0.04 + 1.35 + 5.0 + 5.4). **Median ≈ A$3M. P(positive) ≈ 59%.** |
 | **Cash generation** | Contribution-positive per client from month 3; company cash-positive at ~15–20 clients (~month 15–24) [estimate]. **Can self-fund growth:** yes. Annual fees are billed monthly in advance, there is no inventory, and the main constraint is hiring reviewers. |
 | **AI leverage** | Very high, and it **grows with model improvements**: price is anchored to outcomes (close days, penalties avoided, cash collected), while cost falls. Its own data (close-day distributions, error rates per process, per-client baselines) lets it price guarantees better than rivals, which is the founder's statistics edge. Risk: if agents become good enough for clients to self-serve, the human-trust layer must justify the price. |
 | **Job satisfaction** | High in years 1–4: designing the contract and the measurement system, building the agent stack, selling to CFOs and boards, hiring a team. Later it becomes a people-heavy professional-services operation (managing quality and churn), which is less novel. It is close to his current job, multiplied, so the novelty comes from the outcome contract and the AI build. |
@@ -117,7 +99,7 @@ The gross-margin path depends on the ratio of human reviewers to clients moving 
 | **Market & model** | Target: ~25–40k AU B2B companies with A$10–100M revenue and DSO >45 days [estimate]. A A$30M company at DSO 60 → 45 releases ~A$1.2M of cash; worth ~A$100k/year at a 8–9% cost of funds [estimate]. **Fee:** base A$3–5k/month + 5–8% of overdue cash collected, or 25–35% of the financing value of the DSO reduction. Contracted ACV A$60–120k, expanding to A$150k+ with the full function. **Optional book:** fund A$20–50M of receivables at 3–5% net margin from year 3, from a warehouse with ~10–15% first-loss equity [estimate]. **Comparables:** HighRadius (enterprise), Resolve and Fundbox (US/AU), traditional agencies at 15–30% contingency [verified as vendor ranges]. |
 | **Capital & structure** | Agency: bootstrap A$300–500k. Receivables book: first-loss equity A$2–5M from a family office plus a senior warehouse; founder ~50–65% of the operating company, and a carry/fee interest in the book. |
 | **Floor and failure mode** | Failure: outcome fees are lumpy and clients churn once the backlog of old debt is cleared (a "one-off clean-up" problem). Lending adds credit-loss risk. **Floor:** contracted AR+AP base fees and a saleable client book; the receivables book is secured and recoverable. **P(total loss) ~18%.** |
-| **Outcome distribution (10 yrs)** | Same salary assumption as idea 1. **Total loss 18%:** A$0.2M. **Modest 47%:** A$3M. **Good 27%:** A$14M (A$20M revenue agency + book platform fee). **Great 8%:** A$45M (a working-capital platform with a A$300M+ book). **EV ≈ A$8.9M. Median ≈ A$3M. P(positive) ≈ 55%.** |
+| **Outcome distribution (10 yrs)** | Same salary assumption as idea 1. **Total loss 18%:** A$0.2M. **Modest 47%:** A$3M. **Good 27%:** A$14M (A$20M revenue agency + book platform fee). **Great 8%:** A$45M (a working-capital platform with a A$300M+ book). **EV ≈ A$8.8M** (0.04 + 1.41 + 3.78 + 3.6). **Median ≈ A$3M. P(positive) ≈ 55%** (about 40% of modest outcomes clear the bar). |
 | **Cash generation** | Outcome fees from month 1–2 (old debts collected quickly), so cash arrives faster than in idea 1. Cash-positive at ~20 clients (~month 12–18). The book needs external capital. |
 | **AI leverage** | Very high: collections is a repetitive, measurable, multichannel task; propensity models improve with data pooled across clients; the outcome (cash in the bank) can't be disputed. |
 | **Job satisfaction** | High for the statistician (credit scoring, forecasting, building a lending book). Lower-status collections work in the early years. |
@@ -137,7 +119,7 @@ The gross-margin path depends on the ratio of human reviewers to clients moving 
 | **Market & model** | ~745 juniors × A$60–120k = **A$45–90M**; plus SPVs at A$30–80k each and developer groups at A$150–400k [estimate]; plus CMPTI/R&D claims as contingency (10–15% of the offset) [estimate]. SAM ~A$100–200M [estimate], small but deep, and it links to Track B (the data on SPV performance and covenant headroom feeds outcome-based finance). **Comparables:** Perth company-secretarial and accounting boutiques (input-priced) [unverified]; SPV admin by asset managers. |
 | **Capital & structure** | Bootstrap A$300–600k; a co-founder with 15–25% equity. Founder 55–70%. No external capital needed. |
 | **Floor and failure mode** | Mining cycles: juniors run out of cash in downturns and cut services; receivables risk. Renewables SPVs are more stable (contracted revenue, lender-mandated reporting). **Floor:** a recurring book saleable to a Perth firm; specialised IP. **P(total loss) ~18%.** |
-| **Outcome distribution (10 yrs)** | **Total loss 18%:** A$0.2M. **Modest 52%:** A$3M. **Good 24%:** A$12M. **Great 6%:** A$35M (becomes the data and finance layer for transition assets, feeding Track B lending or royalties). **EV ≈ A$6.6M. Median ≈ A$3M. P(positive) ≈ 52%.** |
+| **Outcome distribution (10 yrs)** | **Total loss 18%:** A$0.2M. **Modest 52%:** A$3M. **Good 24%:** A$12M. **Great 6%:** A$35M (becomes the data and finance layer for transition assets, feeding Track B lending or royalties). **EV ≈ A$6.6M** (0.04 + 1.56 + 2.88 + 2.1). **Median ≈ A$3M. P(positive) ≈ 51%** (about 40% of modest outcomes clear the bar). |
 | **Cash generation** | Quarterly ASX deadlines create sticky, predictable revenue; cash-positive ~month 12–18. Self-funding. |
 | **AI leverage** | High: Appendix 5B and quarterly reports are templated; lender certificates are formulaic; capex classification and claims are pattern-heavy. Covenant data across SPVs is a unique dataset. |
 | **Job satisfaction** | Medium-high: links to Track B interests and the energy transition. But the client base is cyclical and small. |
@@ -157,7 +139,7 @@ The gross-margin path depends on the ratio of human reviewers to clients moving 
 | **Market & model** | Same TAM as idea 1. Cash price ~A$60–100k + deferred A$40–60k per client per year as success fee (paid at a liquidity event at 1.5–2x) or warrants of ~0.25–0.5% [estimate]. With ~150 clients over 10 years and a 10–15% "meaningful exit" rate, the equity book could be worth A$10–40M [estimate]; this depends heavily on 1–2 outliers. |
 | **Capital & structure** | Needs more working capital (deferred fees): A$2–4M from a fund partner or a structured facility; or put the warrants in a separate vehicle with a VC LP. Founder ~45–60%. |
 | **Floor and failure mode** | The services cash book is the floor (as in idea 1); warrants may be worth nothing; deferred fees are written off when companies fail. **P(total loss) ~22%.** |
-| **Outcome distribution (10 yrs)** | **Total loss 22%:** A$0.2M. **Modest 38%:** A$2.5M. **Good 28%:** A$15M. **Great 12%:** A$50M (one or two portfolio outliers). **EV ≈ A$11.2M. Median ≈ A$2.5M. P(positive) ≈ 50%.** |
+| **Outcome distribution (10 yrs)** | **Total loss 22%:** A$0.2M. **Modest 38%:** A$2.5M. **Good 28%:** A$15M. **Great 12%:** A$50M (one or two portfolio outliers). **EV ≈ A$11.2M** (0.04 + 0.95 + 4.2 + 6.0). **Median ≈ A$2.5M. P(positive) ≈ 52%** (about a third of modest outcomes clear the bar). |
 | **Cash generation** | Slower than idea 1: cash-positive ~month 24–30; growth partially funded by external working capital. |
 | **AI leverage** | High: it lowers the cash cost of delivery so deferral is affordable; data on hundreds of scaleups' financials improves the pricing of each warrant. |
 | **Job satisfaction** | Very high: it combines CFO work, investing and portfolio construction. |
@@ -170,10 +152,10 @@ The gross-margin path depends on the ratio of human reviewers to clients moving 
 
 | Rank | Idea | EV (A$, founder value, 10 yrs) | Median | P(positive) | P(total loss) | Cash-positive | Start while employed? |
 |---|---|---|---|---|---|---|---|
-| **1** | **Closewise: guaranteed finance function for scaleups and foreign subsidiaries** | **~11M** | ~3M | **~58%** | ~18% | 15–24 months | Only with consent and a co-founder |
-| 2 | Exit-Ready (bold): deferred fees and warrants | ~11.2M | ~2.5M | ~50% | ~22% | 24–30 months | Same |
-| 3 | Cashline: working-capital agency plus receivables book | ~8.9M | ~3M | ~55% | ~18% | 12–18 months | With an operator |
-| 4 | Assay Finance: resources and energy finance function (intersection) | ~6.6M | ~3M | ~52% | ~18% | 12–18 months | Yes, through a Perth partner |
+| **1** | **Closewise: guaranteed finance function for scaleups and foreign subsidiaries** | **~11.8M** | ~3M | **~59%** | ~18% | 15–24 months | Only with consent and a co-founder |
+| 2 | Exit-Ready (bold): deferred fees and warrants | ~11.2M | ~2.5M | ~52% | ~22% | 24–30 months | Same |
+| 3 | Cashline: working-capital agency plus receivables book | ~8.8M | ~3M | ~55% | ~18% | 12–18 months | With an operator |
+| 4 | Assay Finance: resources and energy finance function (intersection) | ~6.6M | ~3M | ~51% | ~18% | 12–18 months | Yes, through a Perth partner |
 
 All EVs are subjective; treat the ranking, not the decimals, as the output. Round-1 base rates (a ~5–6% great outcome) would cut every EV by ~30–40%.
 
