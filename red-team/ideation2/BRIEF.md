@@ -14,7 +14,14 @@ The first ideation round (`red-team/ideation/SYNTHESIS.md`) converged on SME rol
 ## The founder
 Computer scientist and statistician; ex-BCG; currently a senior finance and operations executive (CFO-type) in a SaaS company (~$500k); former CEO of LocalAgentFinder (marketplace); founded Fulfilio (physical-capacity arbitrage, acquired by Australia Post). Heavy hands-on AI user. Melbourne. Credible to raise capital. No restraint clauses. Personal capital at risk roughly $0.75–1.2M.
 
-## Where to look
+## CORRECTION (4 Nov 2026): what "outcome-based finance" means
+The founder means an **AI-native finance agency that runs the full finance function** (month-end close, collections/AR, payments/AP, reconciliations, reporting, payroll and BAS/tax compliance, FP&A) for client companies, **priced by outcome** (e.g. close delivered by day N, cash collected or DSO reduced, payments made accurately and on time, error-free compliance) rather than by hours or seats. This is **Track A** and the primary idea to test.
+
+**Track B** keeps the founder's second interest: businesses that capitalise on **Australia's advantages in raw materials and renewable energy**. The "Where to look" section below now applies to Track B only.
+
+**The intersection is explicitly in scope:** an outcome-priced AI finance function for resources and energy companies (ASX junior explorers and miners, mining services, renewable project SPVs and developers), whose finance and compliance load is heavy and specialised.
+
+## Where to look (Track B)
 **Outcome-based finance:** capital whose return or repayment depends on **measured outcomes** (energy saved or generated, asset performance and availability, emissions avoided, production delivered, rehabilitation achieved, yield, uptime), including:
 - performance contracts and "as-a-service" models;
 - revenue floors and performance guarantees/insurance;
