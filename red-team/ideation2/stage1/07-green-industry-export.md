@@ -29,14 +29,10 @@
 | REZ landholder aggregation (VicGrid easements, host payments) | Cut. Small fee pool, political and community risk, no data edge |
 | Owning a toll-processing plant | Cut. Capital-intensive, and technology and recovery risk |
 | Grid-ready / powered processing land in Victoria | Cut. The earlier round's C9 critique still applies (connection-queue incumbents) |
-| Mine-rehabilitation bond finance | Belongs to another lens; noted only |
 | **PTI Desk**: AI finance function plus incentive claim plus refund bridge | **Kept (top pick)** |
 | **Collar Capital**: revenue-floor and collar underwriting for critical-minerals producers | **Kept (bold)** |
 | **Offtake and toll desk**: "Fulfilio for concentrates" | **Kept** |
 | **Product carbon passport**: embedded-emissions MRV, priced on the green premium captured | **Kept (fourth, weakest)** |
-| Ex-im trade-finance marketplace for juniors | Folded into the offtake desk |
-| CMSR "bid manager" consultancy | Folded into the PTI Desk (same customers) |
-| Japan/Korea-facing project origination boutique | Folded into the offtake desk |
 
 ## 3. The four ideas
 
@@ -133,7 +129,4 @@ All outcome figures are estimates. They exclude the founder's salary during the 
 
 **Top pick: PTI Desk.** It has the highest probability of a positive outcome, a real floor (recurring service revenue, never a balance-sheet loss), and it can start while employed. It rides a legislated, uncapped A$7B subsidy that begins on a known date (1 Jul 2027), and it sits on the Track A/Track B intersection the brief invites. Its main weakness is a modest median. The answer is to treat it as the launch pad for Collar Capital, which carries the bold upside and should be tested in parallel with conversations only.
 
-Main uncertainties to check in stage 2:
-- whether lenders will advance against CMPTI refunds before the first claims settle;
-- how many facilities will actually register for the CMPTI in FY28–FY30;
-- whether the CMSR will leave room for private floor providers.
+For stage 2, check: lender appetite for CMPTI refund advances, the number of facilities likely to register in FY28–30, and whether the CMSR leaves room for private floor providers.
