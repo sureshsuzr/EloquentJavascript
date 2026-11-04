@@ -45,7 +45,7 @@ Dropped: (6) needs balance sheets and regulatory approval (WA Mining Rehabilitat
 | Market & model | Supply: likely thousands of unindexed private royalties nationally [estimate]. Observed small deals are A$0.2–7M (RHI A$220k, Vox A$650k–A$4.7M, CuFe A$4M, Horizon A$7M) [verified]. Model: deploy A$20–40M over 4 years at an underwritten 12–15% unlevered IRR on production royalties, paid at 0.5–0.7x model NAV on development/exploration royalties. A royalty company runs at 80–95% EBITDA margins (Deterra 90%+) with 3–5 staff. Exit: listed royalty peers trade ~1–2x NAV (Franco ~2x; smaller names lower) [verified for FNV via National Bank note; mid-tier unverified], or trade sale to Vox/Elemental/Altius. |
 | Capital & structure | Pty Ltd holdco; A$15–25M first close from family offices/HNW (not a managed fund at first, to avoid AFSL complexity; raise as equity in an operating company). Founder puts in A$0.5M plus a 10% carried promote; founder ownership ~15–25% after two raises. A royalty-backed debt facility (Taurus-style lenders, banks) from year 4. |
 | Floor & failure mode | Royalties are perpetual or life-of-mine contractual interests. A diversified book of 30+ rarely goes to zero, though exploration royalties can. Failure modes: (a) overpaying at the top of the gold cycle; (b) title/enforceability defects; (c) can't raise beyond A$5M, so it stays a sub-scale hobby. Recoverable value is high (portfolio saleable at 0.6–1.0x cost in a bad case). **P(total loss of founder equity) ≈ 7%.** |
-| Outcome distribution (10 yrs) | Total loss 7% (A$0). Modest 41%: book ~A$30M at 1.0x, founder ~A$1.5M. Good 40%: A$80–120M NAV, founder ~A$6M. Great 12%: listed at A$250M+, founder ~A$18M. **EV ≈ A$5.4M equity**, plus ~A$1.5M cumulative salary; **median ≈ A$6M in the good band, near the modest/good boundary**. **P(positive) ≈ 52%** (needs equity ≳A$1.8M). |
+| Outcome distribution (10 yrs) | Total loss 7% (A$0). Modest 41%: book ~A$30M at 1.0x, founder ~A$1.5M. Good 40%: A$80–120M NAV, founder ~A$6M. Great 12%: listed at A$250M+, founder ~A$18M. **EV ≈ A$5.2M equity**, plus ~A$1.5M cumulative salary; **median at the low end of the good band (~A$4–6M)**. **P(positive) ≈ 52%** (needs equity ≳A$1.8M). |
 | Cash generation | Cash-positive at the asset level from day one if ≥50% of capital goes into producing royalties. Covers its G&A at ~A$15M deployed (year 2–3). Royalty cash can be recycled, but growth needs fresh equity. |
 | AI leverage | High and compounding. LLM extraction of royalty deeds, tenement dealings, drill results and resource statements; Bayesian P(production) models trained on Australian project histories; operator-behaviour scoring; automated monitoring of every royalty's operator announcements. Better models give cheaper diligence per deal, making A$100–300k deals economic, which is where competitors can't go. |
 | Job satisfaction | Detective work plus pricing plus negotiation with colourful prospectors; time in Kalgoorlie. Small team. Close to his Fulfilio "hidden capacity" instinct. |
@@ -99,7 +99,7 @@ Dropped: (6) needs balance sheets and regulatory approval (WA Mining Rehabilitat
 | Market & model | Tenement holding costs (rents plus minimum expenditure) are a few thousand to tens of thousands of dollars per licence per year [estimate; check WA/VIC schedules]. A 30–60 tenement portfolio costs A$1–2M/yr. Most vended projects fail. A handful of royalties over discoveries become worth A$5–50M (Youanmi 1% ≈ $46M). Competitors: Earth AI (Sydney, AI exploration that drills its own) and KoBold Metals (well funded, global) [unverified details], plus traditional prospectors. |
 | Capital & structure | A$3–6M of seed equity. Founder ~35–45% after the geologist co-founder. |
 | Floor & failure mode | The floor is the residual royalties and shares in juniors (illiquid, but rarely all zero), plus the data platform. **P(total loss) ≈ 25%.** Failure: no discovery inside a 6–8 year funding window. |
-| Outcome distribution (10 yrs) | Total loss 25%. Modest 38%: A$1M. Good 25%: A$6M. Great 12%: A$40M. **EV ≈ A$6.6M; median ≈ A$1M; P(positive) ≈ 37%.** |
+| Outcome distribution (10 yrs) | Total loss 25%. Modest 38%: A$1M. Good 25%: A$6M. Great 12%: A$40M. **EV ≈ A$6.7M; median ≈ A$1M; P(positive) ≈ 37%.** |
 | Cash generation | Vending fees and share sales are lumpy, so it is cash-negative for 3–5 years. **Fails the brief's "generates cash" test** unless paired with Idea 2. |
 | AI leverage | Highest of the four, and it strengthens with every model generation. But the edge is replicable by well-funded AI explorers. |
 | Job satisfaction | Very high curiosity payoff. Fieldwork plus ML. |
@@ -123,8 +123,8 @@ Streams and offtake prepayments carry more credit risk (they are closer to debt 
 | Rank | Idea | EV (founder equity, A$) | P(positive) | P(total loss) |
 |---|---|---|---|---|
 | 1 | Royalty-for-Finance (AI finance function for juniors, part-paid in royalties) | ~8.3M | ~60% | ~10% |
-| 2 | Long Tail Royalties (AI-priced small-royalty aggregator) | ~5.4M | ~52% | ~7% |
-| 3 | Open-File Prospector (bold: AI prospect generator) | ~6.6M | ~37% | ~25% |
+| 2 | Long Tail Royalties (AI-priced small-royalty aggregator) | ~5.2M | ~52% | ~7% |
+| 3 | Open-File Prospector (bold: AI prospect generator) | ~6.7M | ~37% | ~25% |
 | 4 | Offset Capital (CMPTI claim engine plus bridge) | ~2.9M | ~35% | ~20% |
 
 **Suggested sequence:** run the Idea 2 interviews and the Idea 1 back-test in parallel within 90 days. If both pass, Idea 2's royalty book seeds Idea 1's fund at year 3–4 (proven deal flow plus a track record gets the A$20M+ raise). Idea 3 becomes a product module of Idea 2 from FY28. Idea 4 stays an option to pursue only with a geologist co-founder and Idea 2 cash behind it.
